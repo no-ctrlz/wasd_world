@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>wasd_webableside_menual</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/menual.css">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+       <header>
+            <div class="innerheader">
+                <h1 class="logo"><a href="index.html">
+                        <p><span>wasd</span><br> web visual studio</p>
+                    </a></h1>
+                <a href="#" class="btn_menu">
+                    <div class="menuOpen">
+                        <img src="img/common/bars.svg" alt="" class="filter-gray">
+                    </div>
+                </a>
+            </div>
+            <nav class="gnb">
+                <div class="leftbox">
+                    <li><a href="index.html#w" id="work"><img src="img/menu/w.svg" alt="" class="filter-white">
+                        </a></li>
+                    <li><a href="index.html#a" id="about"><img src="img/menu/a.svg" alt="" class="filter-white"></a></li>
+                    <li><a href="index.html#s" id="skill"><img src="img/menu/s.svg" alt="" class="filter-white"></a></li>
+                    <li><a href="index.html#d" id="direction"><img src="img/menu/d.svg" alt="" class="filter-white"></a></li>
+                </div>
+                <div class="contact">
+                    <h2>contact me</h2>
+                    <ul>
+                        <li>srw159@naver.com</li>
+                        <li>010 2268 1781</li>
+                        <li>@balloontail</li>
+                    </ul>
+                </div>
+                <a href="#" class="close"><img src="img/common/upload.svg" alt="" class="filter-white"></a>
+            </nav>
+        </header>
+           <section class="toppage">
+               <div class="visualText">
+                   <div class="line">
+                       <span class="a animate" data-animate="motion"></span>
+                       <span class="b animate" data-animate="motion"></span>
+                       <span class="c animate" data-animate="motion"></span>
+                   </div>
+                   <a href="#">
+                       <h2 class="word animate" data-animate="motion">about</h2>
+                   </a>
+               </div>
+           </section>
+        <section class="menual">
+            <div class="menualPage">
+                <img src="img/about/menual/000.png" alt="">
+                <img src="img/about/menual/00.png" alt="">
+                <img src="img/about/menual/01.png" alt="">
+                <img src="img/about/menual/02.png" alt="">
+                <img src="img/about/menual/03.png" alt="">
+                <img src="img/about/menual/04.png" alt="">
+                <img src="img/about/menual/05.png" alt="">
+                <img src="img/about/menual/06.png" alt="">
+                <img src="img/about/menual/07.png" alt="">
+            </div>
+        </section>
+    </div>
+    <script>
+        $('.animate').scrolla({
+            mobile: false, // 모바일에서는 적용안함
+            once: false // 처음스크롤시에만 적용
+        });
+    </script>
+</body></html>

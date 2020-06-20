@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Big Black Bear';
+  src: url('Big Black Bear.eot');
+  src: url('Big Black Bear.eot?#iefix') format('embedded-opentype'),
+       url('Big Black Bear.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BigBlackBear';
+  src: url('BigBlackBear.svg#BigBlackBear') format('svg'),
+       url('BigBlackBear.ttf') format('truetype'),
+       url('BigBlackBear.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

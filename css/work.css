@@ -1,0 +1,83 @@
+/*한페이지씩 분류*/
+header{ z-index: 98;}
+header .innerheader{border-bottom: none;}
+.logo{opacity: 0; display: none;}
+.gnb{background: #000; color: #aaa;}
+body{background: #232323; color:aliceblue;}
+.btn{background: #000;}
+section{width:  1400px;}
+/*work*/
+.workpage .visualText{position: absolute; left: 0%; top: 11%; transform:translateY(-50%); color: #ccc; z-index: 99; transition: all .3s; transform:scale(.5);animation-name: lineall; animation-duration: 2s;}
+@keyframes lineall{
+    0%{transform:scale(1); color: #aaa; left: 5%; top: 50%;}
+    70%{transform:scale(1); color: #aaa; left: 5%; top: 50%;}
+}
+/*.workpage .visualText .line*/
+.workpage .visualText .line .a.motion{position: absolute; top: -500px; left: 127px; width: 8px; height: 309px; background: #ddd; animation-name: lineback-a; animation-duration: .5s;}
+.workpage .visualText .line .b.motion{position: absolute; top: -500px; left: 147px;  width:  8px; height: 309px; background: #ddd; animation-name: lineback-b; animation-duration: .7s;}
+.workpage .visualText .line .c.motion{position: absolute; top: -500px; left: 167px;  width: 8px; height: 309px; background: #ddd; animation-name: lineback-c; animation-duration: 1s;}
+@keyframes lineback-a{
+    0%{height: 441px; background: #aaa; left: 127px; }
+    30%{height: 441px; background: #aaa;left: 127px;}
+}
+@keyframes lineback-b{
+    0%{height: 441px; background: #aaa; left: 147px;}
+    30%{height: 441px; background: #aaa;left: 147px;}
+}
+@keyframes lineback-c{
+    0%{height: 441px; background: #aaa; left: 167px;}
+    30%{height: 441px; background: #aaa;left: 167px;}
+}
+.workpage .visualText h1{ float: left; animation-name: wordup; animation-duration: 1.2s; position: absolute; top: -170%;}
+@keyframes wordup{
+    0%{top: -70%;}
+    30%{top: -70%;}
+}
+.workpage .visualText h1:after{content:'클릭 시 이전 페이지로 이동합니다'; font-size: 18px; position: absolute; white-space: nowrap; top: 10px; right: -105px; opacity: 1; animation: othertxt; animation-duration: 2.2s;}
+@keyframes othertxt{
+    0%{opacity: 0;}
+    90%{opacity: 0;}
+}
+.workpage .visualText h2{font-size: 48px;  margin-top: 75px; margin-left: 25px; color: #222; opacity: 0;}
+/*window*/
+.innerslide{width: 1400px; height: 100vh; position: relative;}
+.tabmenu .inner .window{width: 50%; height: 100vh; top: 0; left: 47%; position: absolute;}
+.tabmenu .inner .window .img{position: absolute; top: 50%; left: -30%; transform: translateY(-55%); width: 860px; height: 560px;  border-radius: 15px; overflow: hidden;}
+
+/*bandicam/y-studio/hanhwa .. */
+.tabmenu #bandicam h2, .tabmenu #y-studio h2, .tabmenu #hanhwa h2, .tabmenu #kca h2, .tabmenu #croquis h2{position: absolute; top: 35%; left: 30%;}
+.tabmenu #y-studio h2{position: absolute; top: 35%; left: 27.15%;}
+.tabmenu #kca h2, .tabmenu #daebang h2{position: absolute; top: 30%; }
+.tabmenu #hanhwa h2{position: absolute; top: 35%; left: 29%;}
+.tabmenu #bandicam h3, .tabmenu #y-studio h3, .tabmenu #hanhwa h3, .tabmenu #kca h3{position: absolute; top: 60%; left: 15%;}
+/*--------------------*/
+
+/*.inner .lefttext*/
+.tabmenu .inner .lefttext{width: 50%; height: 100vh; position: relative; animation-name: title-work; animation-duration: 2.3s; }
+.tabmenu .inner .lefttext.on{animation-iteration-count: 0;}
+@keyframes title-work{
+    0%{opacity: 0;}
+    70%{opacity: 0;}
+}
+.tabmenu .inner .lefttext h2{position: absolute; top: 45%; font-size: 72px; line-height: .8; text-align: right; right: 30%; transform: translateX(-18%);}
+.tabmenu .inner:nth-child(2) .lefttext h2{top: 48%;}
+.tabmenu .inner:nth-child(4) .lefttext h2{font-size: 60px; top: 43%;}
+.tabmenu .inner:nth-child(5) .lefttext h2{font-size: 60px; top: 43%;}
+.tabmenu .inner .lefttext h2 span{color:yellow;}
+.tabmenu .inner .lefttext h2:before{content:'homepage re-newal'; position: absolute; top: -15%; right: 0; font-size: 28px; color: #fff; font-family:'Archivo Narrow'; text-transform: uppercase;}
+.tabmenu .inner:nth-child(2) .lefttext h2:before{content:'website & app responsive web'; top:-75%; position: absolute;}
+.tabmenu .inner h3{position: absolute; top: 60%; left: -19%; line-height: 1.7; font-size: 14px; text-align: right;}
+.tabmenu .inner .lefttext a.btn{ position: absolute; top: 68%; left: -15%; padding:10px 25px; border-radius: 50px; border: 1px solid #aaa; font-size: 16px; box-sizing: border-box;}
+.tabmenu .inner .lefttext #b{position: absolute; left: 0%; }
+.tabmenu .inner .lefttext #c{position: absolute; left: 15%; }
+.tabmenu .inner .lefttext #d{position: absolute; left: 35%; padding: 15px; overflow: hidden; width: 60px;top: 67%;}
+.tabmenu .swipeicon{position: absolute; width: 2.5%; right: -150px; top: 50%; transform: translateY(-50%);font-size: 5%;}
+.tabmenu .swipeicon:before{content: '화면을 오른쪽 방향으로 스크롤해주세요.';  white-space: nowrap; position: absolute; left: -90%; top: 50%; transform: rotate(90deg); animation: othertxt; animation-duration: 2.2s;}
+
+.slick-dots{z-index: 999; position: absolute; top:830px; width: 100%; height: 50px;}
+.slick-dots li{float: left; margin-right: 10%;  }
+.slick-dots li.slick-active{color:red;}
+.slick-dots #slick-slide-control00,.slick-dots #slick-slide-control01,.slick-dots #slick-slide-control02,.slick-dots #slick-slide-control03,.slick-dots #slick-slide-control04,.slick-dots #slick-slide-control05{ background: none; border:none;}
+.slick-dots #slick-slide-control00:hover,.slick-dots #slick-slide-control01:hover,.slick-dots #slick-slide-control02:hover,.slick-dots #slick-slide-control03:hover,.slick-dots #slick-slide-control04:hover,.slick-dots #slick-slide-control05:hover{background: none; border:none; color:red; outline: none;}
+.slick-dots li.slick-active #slick-slide-control00,.slick-dots li.slick-active #slick-slide-control01,.slick-dots li.slick-active #slick-slide-control02,.slick-dots li.slick-active #slick-slide-control03,.slick-dots li.slick-active #slick-slide-control04,.slick-dots li.slick-active #slick-slide-control05{color:red; outline: none;}
+/*----------------------------------------*/

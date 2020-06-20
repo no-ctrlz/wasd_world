@@ -1,0 +1,37 @@
+.wrap{overflow: hidden;}
+section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; z-index: 2; }
+section.profile .visualText{position: absolute; left: 0%; top: 30%; font-size: 72px; transform:translateY(-50%); color: #aaa; z-index: 100; transition: all .3s;}
+.profile .visualText .line .a.motion{position: absolute; left:-65%; top: 44px; width: 60%; height: 10px; background: #aaa; animation-name: line; animation-duration: .5s;}
+.profile .visualText .line .b.motion{position: absolute; left:-65%; top: 64px;  width: 60%; height: 10px; background: #aaa; animation-name: line; animation-duration: .7s;}
+.profile .visualText .line .c.motion{position: absolute; left:-65%; top: 84px;  width: 60%; height: 10px; background: #aaa; animation-name: line; animation-duration: 1s;}
+@keyframes line{
+    0%{width: 0;}
+    30%{width: 0;}
+}
+.profile .word.motion{animation-name: word; animation-delay: 1.1s; animation-duration: .4s; opacity: 1;}
+@keyframes word{
+    0%{opacity: 0; transform: scaleY(.9);}
+    30%{opacity: 0; transform: scaleY(.9);}
+}
+.profile .visualText h3{font-size: 36px; transform: translate(440px,-80px);}
+.profile .visualText h3:after{content: 'talk about my vision.'; font-family: 'Archivo Narrow'; text-transform: uppercase; font-size: 17px; position: absolute; left: 8px;bottom: -22px;}
+.profile .inner{height: 30vh; width: 100%; position: relative; transform: translateY(-200%); padding: 10px 0; box-sizing: border-box;}
+.profile .inner ul{width: 40%; margin: 0 auto; line-height: 1.8; float: left; transform: translateX(80%);}
+.profile .inner ul:nth-child(2){width: 15%;line-height: 1.8; transform: translateX(200%);}
+.profile .inner ul.text li:first-child{font-size: 36px;}
+.profile .inner ul.text li:nth-child(2){font-size: 18px;}
+.profile .inner ul.text li:nth-child(3){margin-top: 15px;font-size: 15px; line-height: 1.2;}
+
+.profile .inner ul li .btn{padding:10px 0px ; border-radius: 50px; border: 1px solid #aaa; font-size: 14px; display: block; text-align: center; margin-bottom: 25px; margin-top: 15px;}
+.profile .inner ul.snslink{width: 20%; position: absolute; left: 42%; bottom: 55px; transform: translateX(-50%);}
+.profile .inner ul.snslink li{float: left; margin-right: 15px;}
+.profile .inner ul.snslink li .sns{width: 50px; height: 50px; display: block; }
+/*-----------------*/
+.recordblock{}
+.recordblock li{ float: left; font-size: 14px;}
+
+/*--------------*/
+.readme{position: relative;}
+.readme .summary{width: 1400px; margin: 0 auto; height: 100vh; position: absolute;}
+.readme .summary li{text-align: center; margin-bottom: 30px; }
+.readme .summary li .headmention{font-size: 24px; font-family: 'Nanum Gothic'; margin-bottom: 15px; }

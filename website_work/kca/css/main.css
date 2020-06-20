@@ -1,0 +1,231 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
+
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{color:inherit; text-decoration: none;}
+
+body{font-family: 'Nanum Gothic', sans-serif; font-size: 16px; color:#333; line-height: 1.25;}
+
+.wrap{width: 100%;}
+header{width: 100%; height: 90px; background: #fff; box-shadow: 0 0 10px rgb(93,93,93); position: relative;}
+.innerHeader .util{margin-left: 50px;}
+.innerHeader .util ul{ width: 218px; height: 100%; float: left; overflow: hidden; }
+
+.innerHeader .util ul li{float: left; line-height: 90px; padding: 0 15px;}
+/*자식에 플루트효과를 적용하면 높이값을 상실하므로 부모한테 오버플로우:히든을 적용한다*/
+
+.innerHeader .util ul li a{display: block; width: 100%; height: 100%;}
+
+.innerHeader .logo{position: absolute; width: 240px; line-height: 90px; left: 50%; transform: translateX(-50%);}
+
+.innerHeader .logo a{display: block; width: 100%; height: 100%;}
+
+.innerHeader .related{width: 270px; float: right;}
+
+.innerHeader .related a{display: block; float: left; padding: 10px 15px; margin-top: 25px; border: 1px solid #ddd;}
+
+
+/*section.main*/
+
+.main {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/main_5month_02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;    
+}
+
+/*margin:0 auto는 애니메이션 포지션 앱솔루트 잡아줄 경우를 고려해 사용을 지양한다.*/
+.main .inner{width: 1400px; height: 800px;  position: relative; margin:0 auto;}
+
+.main .inner .mainTitle{width: 653px; height: auto;}
+.main .inner .mainTitle h2{position: absolute; top:30%; left: 0; font-size: 50px; line-height: 1.3; color:#222; 
+animation-name: titani; animation-duration: 1s; }
+
+@keyframes titani {
+    0%{opacity: 0; top:0;}
+    30%{opacity: 0; top:0;}
+    100%{opacity: 1; top:30%;}
+}
+.main .inner .mainTitle p{position: absolute; left: 0; top: 50%; font-size: 19px; 
+animation-name: titani-p; animation-duration: 0.5s;}
+/*애니메이션 좌측에서 시작될거라서 left:0;*/
+@keyframes titani-p {
+    0%{opacity: 0;  transform: scale(0); }
+    30%{opacity: 0;  transform: scale(0); }
+    100%{opacity: 1;  transform: scale(1); }
+}
+
+.main .inner .mainTitle .btn {position: absolute; left:0; top:65%; font-size: 18px; color:#fff; background: #000; padding: 15px 25px; animation-name: titani-btn; animation-duration: 2s;}
+
+@keyframes titani-btn{
+    0%{opacity: 0; top:70%;}
+    30%{opacity: 0; top:70%;}
+    100%{opacity: 1; top:65%;}
+}
+.main .inner .may{position: absolute; top:50%; transform: translateY(-50%); right:150px; width: 185px; height: 300px;}
+
+
+.main .inner .may > a{ display: block; width: 154px; height: 154px; border-radius: 50%; background: #f57454; text-align: center; animation-name: mayani; animation-duration: 0.8s; position: relative;}
+
+@keyframes mayani{
+    0%{opacity: 0; transform: scale(0);}
+    30%{opacity: 0; transform: scale(0);}
+    70%{opacity: 0.5; transform: scale(1.2);}
+    100%{opacity: 1; transform: scale(1);}
+}
+.main .inner .may strong{font-style: italic; font-size: 55px; letter-spacing: -1px; position: absolute; left: 50%; transform: translateX(-50%);  top: 10%;}
+.main .inner .may p{color:#fff; position: absolute; left: 50%; transform: translateX(-50%); bottom: 20%;}
+.main .inner .may ul{width: 185px; height: auto;}
+.main .inner .may ul li{line-height: 40px; color:#333; font-size: 10px; letter-spacing: 5px; font-weight: 600; border-bottom: 1px solid #333; animation-name: mayli; animation-duration:0.8s;}
+
+ @keyframes mayli{
+    0%{opacity: 0; letter-spacing: -5px;}
+    50%{opacity: 0; letter-spacing: -5px;}
+    100%{opacity: 1; letter-spacing: 5px;}
+}
+
+.main .inner .may ul li:nth-child(2){animation-duration: 1.2s; border-bottom: 1px solid #333;}
+.main .inner .may ul li:nth-child(3){animation-duration: 1.5s; border-bottom: 1px solid #333;}
+.main .inner .may ul li a{display: block;}
+
+.main .inner .may h3{position: absolute; top:100%; right:25px; font-size: 40px; animation-name: mayh3; animation-duration: 1.8s; }
+
+@keyframes mayh3{
+    0% {opacity: 0; top :95%;}
+    30% {opacity: 0; top :95%;}
+    100% {opacity: 1; top :100%;}
+}
+
+/*section.happy*/
+
+section.happy{width: 100%;}
+section.happy .happyinner{width: 1400px; margin: 0 auto; color:#333; margin-top: 100px; margin-bottom: 100px;}
+/*모니터 비율과 상관없이 이미지 크기가 조율될 수 있도록 margin: 0 auto;*/
+
+section.happy .happyinner h2{text-align: center; font-size: 40px; font-weight: bold; margin-bottom: 50px;}
+section.happy .happyinner h2 .colortext{color:#f57260;}
+
+section.happy .happyinner ul{width: 100%; height: auto; overflow: hidden;}
+
+section.happy .happyinner ul li{float:left; width: 32.2%; margin-right: 1.7%; }
+/*float값주면 부모요소한테 overflow: hidden;*/
+
+section.happy .happyinner ul li:nth-child(1){background: #c5cdbe;}
+section.happy .happyinner ul li:nth-child(2){background: #e59b90;}
+section.happy .happyinner ul li:nth-child(3){margin-right: 0; background: #dfcfc0;}
+
+section.happy .happyinner ul li a{display: block; width: 100%; height: 100%; padding: 50px 0px 50px 30px; box-sizing: border-box; text-align: left; overflow: hidden; position: relative;}
+/*패딩값넣으면 box-sizing: border-box;*/
+section.happy .happyinner ul li:nth-child(1) a:after{content:''; position: absolute; top:60px; right:0; width: 63%; height: 2px; background: rgba(255, 255, 255, 0.35);}
+
+section.happy .happyinner ul li:nth-child(2) a:after{content:''; position: absolute; top:60px; right:0; width: 60%; height: 2px; background: rgba(255, 255, 255, 0.35);}
+section.happy .happyinner ul li:nth-child(3) a:after{content:''; position: absolute; top:60px; right:0; width: 43%; height: 2px; background: rgba(255, 255, 255, 0.35);}
+
+section.happy .happyinner ul li a p{font-size: 19px; margin-bottom: 30px;}
+section.happy .happyinner ul li a h3{font-size: 26px; margin-bottom: 70px;}
+section.happy .happyinner ul li a p.img{width: 380px; height: 250px; float: right;overflow: hidden;}
+section.happy .happyinner ul li a p.img img{width: 100%; transition: all 0.3s;}
+section.happy .happyinner ul li a:hover p.img img{transform: scale(1.2); transition: all 0.38s;}
+
+/*.happy 스크롤 이벤트----------------------------------------------------------------------------------*/
+
+.happy.on ul li{
+    animation-name: happy;
+    animation-duration: 1s;
+}
+@keyframes happy{
+    0%{opacity: 0; margin-top: 60px;}
+    30%{opacity: 0; margin-top: 60px;}
+    100%{opacity: 1; margin-top: 0;}
+}
+.happy.on ul li:nth-child(2){animation-duration: 1.3s;}
+.happy.on ul li:nth-child(3){animation-duration: 1.5s;}
+/*---------------------------------------------------------------------*/
+
+/*section.smart*/
+section.smart{width: 100%;background-image:url(../img/section.jpg); background-repeat: no-repeat; background-size:cover;padding: 80px 0px; }
+/*width:100%일때 box-sizing:border box; 안적어줘도됌*/
+section.smart .smartinner{width: 1400px; height: auto; margin: 0 auto; text-align: center; overflow: hidden;}
+section.smart .smartinner h2{font-size: 40px; margin-bottom: 60px;}
+section.smart .smartinner h2 .colortext2{color:#425ca6;}
+section.smart .smartinner ul{width: 30%; float: left;}
+section.smart .smartinner ul li{width: 100%;}
+section.smart .smartinner ul li a{display: block; width: 100%; height: 100%; position: relative;}
+section.smart .smartinner ul li a p.img{width: 100%; height: 220px; overflow: hidden;}
+section.smart .smartinner ul li a p.img img{width: 100%;}
+section.smart .smartinner ul li a h3{
+    position: absolute; top:55%; left:40%; color:aliceblue;
+    font-size: 22px; line-height: 1.5; }
+section.smart .smartinner ul li a:before{content:'상품테스트'; position: absolute; color:aliceblue; left:40px; bottom:40px; font-size: 16px; font-weight: bold; padding-bottom: 25px; border-bottom: 5px solid #fff;}
+section.smart .smartinner ul li:nth-child(2) a:before{content:'피해예방';}
+section.smart .smartinner .row{width: 70%; float:right; height:auto;}
+
+section.smart .smartinner .row .guide{float:left; width: 50%; background: #fff; padding: 30px 0; box-sizing: border-box; }
+section.smart .smartinner .row .guide:nth-child(1){border-right: 1px solid #ddd;}
+section.smart .smartinner .row .guide > p{ margin: 0 auto; width: 30%; margin-top: 20px; font-size: 19px; font-weight: bold; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 10px; margin-bottom: 20px; }
+
+section.smart .smartinner .row .guide a{display: block; width: 100%; height: 100%;}
+
+section.smart .smartinner .row .guide a p.img{display: inline-block; width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin-bottom: 30px; }
+section.smart .smartinner .row .guide a:hover p.img img{transform: scale(1.2); transition: all 0.7s ease;}
+section.smart .smartinner .row .guide a p.img img {width: 100%;transition: all 0.3s ease;}
+section.smart .smartinner .row .guide h3{margin-bottom: 10px;}
+
+/*smart 스크롤이벤트-----------------------------------------------*/
+.smart.on ul li{ animation-name: smart;
+    animation-duration: 0.8s;
+}
+@keyframes smart{
+    0%{opacity: 0; margin-top: 60px;}
+    30%{opacity: 0; margin-top: 60px;}
+    100%{opacity: 1; margin-top: 0px;}
+    
+}
+.smart.on ul li:nth-child(2){animation-duration: 1.2s;}
+.smart.on ul li:nth-child(3){animation-duration: 1.5s;}
+.smart.on .row .guide{animation-name: smart; animation-duration: 1.7s;}
+
+.smart.on .row .guide:nth-child(2){animation-duration: 2.3s;}
+
+/*---------------------------------------------------------------------*/
+
+/*section.news*/
+section.news {width: 1400px; margin: 0 auto; overflow: hidden; margin-top: 100px;}
+
+section.news .issue{width: 49.25%; height: 280px; margin-right: 1.5%; float:left; background-image: url(../img/img_08.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 50px; box-sizing: border-box;}
+
+section.news .issue:nth-child(2){margin-right: 0;background-image: url(../img/img_09.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;}
+
+section.news .issue h2{margin-bottom: 20px; font-weight: 700;}
+
+section.news .issue p{font-size: 15px; color: #333; line-height: 1.6;}
+/*line height는 1.6이 표준*/
+section.news .issue p .num{font-size: 14px; padding: 3px 7px; background: #7f8c97; border-radius: 50%;}
+
+/*.news 스크롤다운이벤트----------------------------------*/
+.news.on .issue{ animation-name: news; animation-duration: 1s;}
+@keyframes news{
+    0%{opacity: 0; margin-top: 100px;}
+    30%{opacity: 0; margin-top: 100px;}
+    100%{opacity: 1; margin-top: 50px;}
+}
+.news.on .issue:nth-child(2){animation-name: news; animation-duration: 1.5s;}
+/*-------------------------------------------------------*/
+
+/*footer*/
+footer{width: 100%; height: auto; background: #454545; color:#adadad; overflow: hidden;}
+footer .address{width: 1400px; margin: 0 auto; line-height: 1.7;}
+footer .address p{float: left; margin: 50px; text-align: center;}
+footer .address .flogo{float: right; padding-top: 30px;}
+footer .address .copy{font-size: 14px;}
+
+/*top btn*/
+.top{float:right; margin-right: 30px; margin-bottom: 30px;width: 80px; height: 80px;border-radius: 50%; background: #454545; color: aliceblue; text-align: center; background-image: url(../img/arrow.JPG);
+background-size: 25px; background-repeat: no-repeat; background-position: top; position: relative;}
+.top a{ display: block; width: 100%; height: 100%;}
+.top p{position: absolute; font-weight: bold; top:50%; left: 50%; transform: translate(-50%,-50%);}
+

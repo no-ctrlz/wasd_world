@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta property="og:type" content="website"/>
+    <title>반디캠컴퍼니서브4</title>
+    <link rel="stylesheet" type="text/css" href="css/sub04/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/sub04/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/sub04/content.css" />
+    <link rel="stylesheet" href="css/sub04/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <div class="gnb_area">
+                <h1><a href="index.html">반디캠컴퍼니</a></h1>
+
+                <!-- gnb -->
+                <nav>
+                    <a href="#" class="btn_m_menu">메뉴열기</a>
+                    <ul class="gnb">
+                        <li class="home"><a href="index.html">BANDICAM<span>COMPANY</span></a></li>
+                        <li><a href="sub01.html" id="about">회사소개</a></li>
+                        <li><a href="sub02.html" id="product">SDK</a></li>
+                        <li><a href="sub03.html" id="partner">고객사</a></li>
+                        <li><a href="sub_04.html" id="contact">문의</a></li>
+                    </ul>
+                </nav>
+                <!-- //gnb -->
+
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- 서브비주얼 -->
+        <div class="area_subVisual">
+            <div class="sub_txt">
+                <span>오늘도 <br>당신의 <i>크리에이티브</i>한 <br><i>순간</i>을<br>레코딩합니다.</span>
+                <em>동영상 녹화 및 편집 소프트웨어를 개발하는<br>멀티미디어 전문기업</em>
+                <div class="sub_icon"></div>
+            </div>
+        </div>
+        <!-- //서브비주얼 -->
+        <!-- lnb -->
+        <div class="area_lnb">
+            <div class="inr">
+                <a class="btn_m_lnb" href="/">home</a>
+                <!-- 해당메뉴 클릭시 a태그에 on추가 -->
+                <ul>
+                    <li><a id="sub04" href="sub_04.html" data-lnb="sub">문의</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //lnb -->
+
+        <script type="text/javascript">
+            $(".gnb > li > a").removeClass("on");
+            $("#contact").addClass("on");
+            $("#" + "sub04").addClass("on");
+
+        </script>
+        <!-- //lnb -->
+
+        <section id="container" class="sub">
+            <!-- 본문 -->
+            <div class="contact" id="contact">
+                <h3>Contact Sale</h3>
+                <div class="one">
+                    <ul>
+                        <li>
+                            <div class="innerbox">
+                                <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                                <h5>제품사용 / 구매문의</h5>
+                            </div>
+                            <p>반디캠 및 반디컷 제품 관련 문의는 아래 각 게시판이나 해당 제품의 공식 이메일 주소로 문의주시기 바랍니다.</p>
+                            <div class="another">
+                                <span>게시판</span><br><br>
+                                <a href="#">반디캠</a>
+                                <a href="#">반디컷</a>
+                            </div>
+                            <div class="another">
+                                <span>이메일</span>
+                                <p>반디캠: bandicam@bandicam.com</p>
+                                <p>반디컷: bandicut@bandicam.com</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="innerbox">
+                                <span><i class="fa fa-users" aria-hidden="true"></i></span>
+                                <h5>제휴 및 기타 문의</h5>
+                            </div>
+                            <p>SDK/라이브러리, 광고 및 기타 제휴 관련 문의는 다음의 이메일 주소로 문의 주시기 바랍니다.</p>
+                            <div class="another">
+                                <p><span>이메일</span>: support@bandicam.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h4>반디캠컴퍼니는<br> 동영상 녹화 및 편집 소프트웨어를 전문적으로 개발하는 멀티미디어 전문 기업입니다.</h4>
+                <div class="two">
+                    <ul>
+                        <li>
+                            <p class="img"><img src="images/sub04/img_kr.jpg" alt=""></p>
+                            <div class="txt">
+                                <h4>서울, 대한민국</h4>
+                                <p>서울시 영등포구 국제금융로2길 37 에스트레뉴 603호 (우) 07327</p>
+                            </div>
+                            <a href="https://goo.gl/maps/FuJ5ZevJJGz">지도보기</a>
+                        </li>
+                        <li>
+                            <p class="img"><img src="images/sub04/img_us.jpg" alt=""></p>
+                            <div class="txt">
+                                <h4>Irvine, CA</h4>
+                                <p>930 Roosevelt Ave, Suite 235,
+                                    Irvine, CA 92620</p>
+                            </div>
+                            <a href="https://goo.gl/maps/hwTz8KmnPy1X1xoG8">지도보기</a>
+                        </li>
+                        <li>
+                            <p class="img"><img src="images/sub04/img_hk.jpg" alt=""></p>
+                            <div class="txt">
+                                <h4>Hong Kong</h4>
+                                <p>FT C9, 20/F, MAI LUEN IND. BLDG, 23-31 KUNG YIP ST., KWAI CHUNG, N.T., HONG KONG</p>
+                            </div>
+                            <a href="https://goo.gl/maps/nxj85iLwSxC2">지도보기</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //본문 -->
+        </section>
+        <!-- menu on control -->
+        ﻿
+        <!-- footer -->
+        <footer id="footer" class="scrollMain">
+            <div class="inr">
+                <div class="area_flist">
+                    <h2>contact us</h2>
+                    <ul>
+                            <li>반디캠컴퍼니(유)</li>
+                            <li>대표이사 : 오철욱</li>
+                            <li>주소 : 서울 영등포구 여의도동 국제금융로2길 37, 에스트레뉴 306호</li>
+                            <li>사업자등록번호 : 880-88-01719</li>
+                            <li>통신판매업신고번호 : 제2016-서울영등포-0857</li>
+                            <li>1833-7947</li>
+                            <li>bandicam@bandicam.com</li>
+                    </ul>
+                </div>
+                <ul class="area_ficon">
+                    <li data-ficon="01"><a href="https://www.bandicam.co.kr/">반디캠 pc화면 녹화</a></li>
+                    <li data-ficon="02"><a href="https://www.bandicam.co.kr/bandicut-video-cutter/"><span>반디컷 동영상 편집</span></a></li>
+                    <li data-ficon="03" class="web"><a href="https://www.bandicam.co.kr/company/sdk/bandi_video_library/sales/"> <span>SDK 문의</span></a></li>
+                    <li data-ficon="03" class="mob"><a href="https://www.bandicam.co.kr/company/sdk/bandi_video_library/sales/" target="_blank"><span>SDK 문의</span></a></li>
+                </ul>
+            </div>
+            <ul class="area_footer_info">
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li>Copyright © 2008-2020 Bandicam Company. All Rights reserved.</li>
+            </ul>
+            <a href="#wrap" class="btn_top active">맨위로</a>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>

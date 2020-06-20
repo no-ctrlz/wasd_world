@@ -1,0 +1,97 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,700;1,500&family=Archivo:wght@400;700&family=Black+Han+Sans&family=Nanum+Gothic&display=swap');
+/*,'Black Han Sans'*/
+@font-face {
+  font-family: 'Big Black Bear';
+  src: url('Big Black Bear.eot');
+  src: url('Big Black Bear.eot?#iefix') format('embedded-opentype'),
+       url('Big Black Bear.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* reset */
+
+.slick-slide{ outline: none;}
+/*slick에 자동으로 생성되는 아웃라인 해제 200531*/
+html,body {
+    scroll-behavior: smooth;
+}
+body {margin: 0; padding: 0; font-family: 'BigBlackBear','Archivo','Archivo Narrow','Nanum Gothic', sans-serif;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, table {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 600;}
+header, main, footer, section, article, aside, nav {display: block;}
+a {color: inherit; text-decoration: inherit;}
+a img {border: none;}
+img {vertical-align: middle; max-width: 100%;}
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+div svg:hover {
+  fill: #fff;
+}
+
+
+/*svg*/
+.filter-gray{filter: invert(71%) sepia(91%) saturate(0%) hue-rotate(83deg) brightness(95%) contrast(102%);}
+.filter-white{filter: invert(100%) sepia(1%) saturate(7496%) hue-rotate(157deg) brightness(103%) contrast(101%);
+}
+.filter-yellow{filter: invert(75%) sepia(87%) saturate(1128%) hue-rotate(360deg) brightness(110%) contrast(107%);}
+/*.btn:hover*/
+.btn{transition: all .3s;}
+.btn:hover{background: #000; color: #fff; transition: all .5s;}
+/*layout*/
+
+/*header*/
+header{width: 100%; height: 70px; position: fixed; z-index: 100;}
+header .innerheader{ padding: 20px 0; box-sizing: border-box; border-bottom: 1px solid #eee; transition: all .3s;}
+header .innerheader .logo{color:#aaa; font-size: 11px; width: 180px; margin-left: 25px; font-family: 'Archivo'; text-transform: uppercase;}
+header .innerheader .logo.on{color:#fff; transition: all 0.3s;}
+header .innerheader .logo a{display: inline-block;}
+header .innerheader .logo span{color:#aaa; font-size: 42px; font-family: 'big black bear'; margin-left: -4px;}
+header .innerheader .logo.on span{color:#fff; transition: all 0.3s; }
+header .innerheader .logo p{line-height: .91;}
+/*fixHeader*/
+header.on{width: 100%; height: 70px; position: fixed; z-index: 100;}
+header.on .innerheader{ padding: 10px 0; box-sizing: border-box; border-bottom: 1px solid rgba(0, 0, 0, 0); transition: all .5s;}
+header.on .innerheader .logo{color:#aaa; font-size: 11px; width: 180px; margin-left: 25px;}
+header.on .innerheader .logo.on{color:#fff; transition: all 0.3s;}
+header.on .innerheader .logo a{display: inline-block;}
+header.on .innerheader .logo span{color:#aaa; font-size: 42px;}
+header.on .innerheader .logo.on span{color:#fff; transition: all 0.3s;}
+header.on .innerheader .logo p{line-height: 0.9;}
+header.on .innerheader .btn_menu{top: 15px; transition: all 0.5s;}
+
+/*nav*/
+.btn_menu{float: right; position: absolute; top: 25px; right: 20px; width: 40px; transition: all 0.3s;}
+.btn_menu img{display: block; width: 100%; height: 100%;}
+nav{position: relative; width: 100%; height: 50vh; background-color:#ccc; z-index: -1;}
+.gnb{position:absolute; background-color:#ccc; top:-600px; transition: all .8s;}
+.gnb.on{top: 0; transition: all .8s; overflow: hidden;}
+.gnb.on .menuOpen{display: none;}
+.gnb .close{ font-size: 40px; color:#ddd; display: block;}
+.gnb .close img{ width: 2.5%; position: absolute; left: 50%; top: 90%; transform: translate(-50%,-50%);}
+.leftbox{width: 700px; height: 350px;padding:0 150px; box-sizing: border-box; margin: 75px 0 75px 0; position: relative; transform: translateX(15%);}
+.leftbox:after{content: 'menu'; position: absolute; left: 10%; font-size: 28px; top: 50%; transform: translateY(-50%);}
+.gnb li{position: absolute; width: 70px; left: 40%; top: 36%;}
+.gnb li:nth-child(1){width: 85px;}
+.gnb li:nth-child(2){left: 34.8%; top: 55.5%;}
+.gnb li:nth-child(3){left: 45%; top: 55.5%;}
+.gnb li:nth-child(4){left: 55.2%; top: 55.5%;}
+.gnb li:nth-child(5):after{display: none;}
+.gnb li:after{content:'work'; position: absolute; top: -15px; left: 0px; font-size: 12px;}
+.gnb li:nth-child(2):after{content:'about'; left: -45px; top: 30px; }
+.gnb li:nth-child(3):after{content:'skill'; top: 70px; left: 0px;}
+.gnb li:nth-child(4):after{content:'direction'; top: 30px; left: 75px;}
+.gnb li a{display:block;}
+/*.gnb .contact*/
+
+.gnb .contact{ width: 700px; height: 350px; padding:0 150px; box-sizing: border-box; margin: 75px 0px 75px 0; position: absolute; left: 50%; top:0;}
+.gnb .contact h2{font-size: 28px; margin-top: 160px;}
+.gnb .contact ul{position: relative; width: 100%;  margin-top: 35px;}
+.gnb .contact ul li{position: absolute; left: 60%; top: -95px; font-size: 12px; font-family: 'Archivo'; text-transform: uppercase;}
+.gnb .contact ul li:nth-child(2){ white-space: nowrap; top: -55px;}
+.gnb .contact ul li:nth-child(3){top: -15px;}
+.gnb .contact ul li:after{display: none;}
+.gnb .contact ul li:before{content: 'e-mail'; white-space: nowrap; margin-right: 45px; font-family: 'big black bear';}
+.gnb .contact ul li:nth-child(2):before{content: 'phone';font-family: 'big black bear'; }
+.gnb .contact ul li:nth-child(3):before{content: 'twitter'; margin-right: 30px; font-family: 'big black bear';}

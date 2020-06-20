@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* 카카오맵 업데이트로 불필요한 패딩, 선이 잡혀서 제거 */
+/*.root_daum_roughmap{border:0 !important; padding:0 !important;}*/
+#container{opacity:0; padding:80px 0px; transform:translateY(50px); transition:all 0.6s ease-out 0s;}
+#container.active{opacity:1; transform:translateY(0px);}
+#container{max-width:1200px; min-height:500px; box-sizing:border-box; margin:0 auto; padding:90px 0;}
+#about{position: relative;}
+#about > h3{font-size:45px; color:#000; letter-spacing:-1px; font-weight:700; text-align:center; position: relative;}
+#about > h3:after{content:''; display:block; width:100%; height:6px; margin:10px auto 50px auto; background:url(/../images/sub/img_border.gif) repeat-x 0 0;}
+#about > h3:before{content:''; height: 4px; width: 380px; background: #FFCC00; position:absolute; top:0%; left:50%; transform: translate(-50%,-250%);display: block; animation-name: bar; animation-duration: 0.5s; animation-delay: 0.2s;}
+@keyframes bar{
+    0%{opacity: 0;  width: 0px;}
+    30%{opacity: 0;  width: 0px;}
+    100%{opacity: 1;  width: 380px;}
+}
+#about > h4{display:block; font-size:25px; color:#2161b9; letter-spacing:-1px; font-weight:400; text-align:center; margin-bottom:50px; position: relative;}
+#about > h4 > span{display:block; font-weight:700; font-size:35px;}
+#about p.img {display: block; width: 50%; float: right;}
+#about p.img img{width: 100%; height: 100%;border-radius: 50px;}
+#about p.txt{font-size: 15px; line-height: 1.8; padding-top: 30px; margin: 60px 30px 0 0; width: 45%; padding-left: 30px;}
+#about p.txt b{font-size: 32px; color:#ffcc00; line-height: 1.3;}
+#about #txt2{ margin-top: -1%;}
+#about a{display: block; margin-top: 30px; margin-left: 150px; padding: 10px; border-radius: 20px; transition: all .3s; width: 22%; border: 1px solid #ddd;}
+#about a:hover{background: #ffcc00; transition: all .3s; color:#fff; border: 1px solid #ffcc00;}
+
+@media all and (max-width:1200px){
+	#container{opacity:0; padding:60px 0px;}
+	#about{max-width:inherit; padding:-20px 20px;}
+}
+
+@media all and (max-width:1024px){
+	#about{width:100%;  padding:40px 15px 80px;box-sizing:border-box;}
+	#about > h3{font-size:38px;}
+    #about > h4{font-size:22px;}
+	#about > h4 > span{font-size:26px;}
+    #about > h3:before{width: 320px; animation-name: bar; animation-duration: 0.5s; animation-delay: 0.2s;}
+@keyframes bar{
+    0%{opacity: 0;  width: 0px;}
+    30%{opacity: 0;  width: 0px;}
+    100%{opacity: 1;  width: 320px;}
+}
+    #about p.txt{margin: 30px 30px 0px 20px; font-size: 14.5px; width: 45%; padding: 15px 0; }
+    #about a{margin-left: 130px; font-size: 13.5px; width: 22.5%;}
+}
+
+@media all and (max-width:768px){
+    #about p.img{float: none;width: 95%; margin-left: 2%;}
+    #about p.txt{margin: 30px 30px 0 90px; font-size: 14.5px; width: 75%; padding: 15px 0; }
+    #about a{margin-left: 0px; float: right; font-size: 13.5px; width: 30%; padding: 15px; margin-right: 80px;}
+    #about > h3:after{display: none;}
+    #about > h4{margin:30px auto;}
+}
+
+@media all and (max-width:680px){
+	#container{opacity:0; padding:40px 0px;}	
+	#about{width:100%;}
+	#about > h3{font-size:36px;}
+	#about > h4{font-size:19px;}
+	#about > h4 > i{display:inline-block;}
+	#about > h4 > span{font-size:22px;}
+	#about > p{font-size:15px;}
+	#about > p > em{display:block; font-size:24px;}
+	#about > p > br{display:none;}
+}
+
+@media all and (max-width:414px){
+	#container{opacity:0; padding:40px 0px;}
+	#about > p{font-size:11px;}
+	#about > h3{font-size:30px;}
+    #about > h3:before{ width: 250px;animation-name: bar; animation-duration: 0.5s; animation-delay: 0.2s;}
+@keyframes bar{
+    0%{opacity: 0;  width: 0px;}
+    30%{opacity: 0;  width: 0px;}
+    100%{opacity: 1;  width: 250px;}
+}
+	#about > h4{font-size:16px;}
+    #about p.txt{margin: 30px 30px 0 15px; width: 90%;}
+    #about a{margin-right: 60px; width: 60%;}
+}
+
+@media all and (max-width:375px){	
+
+}

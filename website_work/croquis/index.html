@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>크로키아카이브</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="innerheader">
+                <a href="index.html">croquis archive</a>
+                <ul class="gnb">
+                    <li><a href="#">info</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">project2month</a></li>
+                    <li><a href="#">contact</a></li>
+                    <!--        WORK/ARCHIVE/SOCIAL or STUDIES/DIRECTION            -->
+                </ul>
+                <div class="mo"><a href="#"><img src="img/icon_m_menu.png" alt=""></a></div>
+            </div>
+        </header>
+        <aside id="aside">
+            <li><a href="#">info</a></li>
+            <li><a href="#">Archive</a></li>
+            <li><a href="#">project2month</a></li>
+            <li><a href="#">contact</a></li>
+        </aside>
+        <script>
+            var scrollTop = 0;
+            scrollTop = $(document).scrollTop();
+            fixHeader();
+            sideBar();
+
+            //윈도우창 조절시에 이벤트
+            $(window).on('scroll resize', function() {
+                scrollTop = $(document).scrollTop();
+                fixHeader();
+                sideBar();
+            });
+
+            //고정헤더함수
+            function fixHeader() {
+                if (scrollTop > 200) {
+                    $('header').addClass('on');
+
+                } else {
+                    $('header').removeClass('on');
+                }
+            }
+
+            //사이드바함수
+            function sideBar() {
+                $('#aside').css({
+                    'top': (scrollTop + 150) + 'px'
+                });
+            }
+        </script>
+        <section class="main">
+            <div class="visual">
+                <div class="visualText">
+                    <h1>드로잉 1일 1영상구역:</h1>
+                    <h2>잘 그리기 위한 간헐적 노력의 흔적</h2>
+                    <a href="#">자세히보기</a>
+                </div>
+            </div>
+            <div class="scroll">스크롤을 <img src="img/mannequin.svg" alt="scrollicon">내려주세요</div>
+        </section>
+        <section id=archive class="archive">
+            <ul class="slide">
+                <li>
+                    <p class="img"><img src="img/_beingbuilt_2017.png" alt=""></p>
+
+                </li>
+                <li>
+                    <p class="img"><img src="img/20171129_032207.png" alt=""></p>
+                </li>
+                <li>
+                    <p class="img"><img src="img/IMG_7285.JPG" alt=""></p>
+                </li>
+            </ul>
+            <div class="txtbox">
+                <h2><span>A</span>rchive</h2>
+                <p>실험정신을 보여주는 아이디어를<br> 쌓아둔 창고입니다.</p>
+                <a href="#">둘러보기</a>
+            </div>
+
+        </section>
+        <script>
+            $(function() {
+                $(".archive .slide").slick({
+                    arrows: true, //화살표
+                    dots: false, //인디케이터 해제
+                    fade: true, //페이드인 효과
+                    autoplay: true, //자동재생
+                    autoplaySpeed: 3000, //재생시간 n000=n초
+                    pauseOnHover: false, //마우스오버, 포커스시 멈추는 것을 해제
+                    pauseOnFocus: false
+                });
+            });
+        </script>
+        <section class="project" id="project">
+            <div class="abouttxt">
+                <h2>PROJECT</h2>
+                <h3>project 2 month</h3>
+                <p>프로젝트 2개월(P2H)은
+                    일러스트레이터 늘무님이 기획하신 2개월 단기 실험 스터디로
+                    드로잉실력향상 트레이닝입니다.</p>
+            </div>
+            <div class="track">
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/12URd9-tc8g?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/18mCYW1MQkg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/6YGWcUJUcKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/Jqge7LswWpE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            </div>
+        </section>
+        <script>
+            $(function() {
+                $(".project .track").slick({
+                    arrows: false, //화살표
+                    dots: true, //인디케이터
+                    autoplay: true, //자동재생
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    autoplaySpeed: 6000, //재생시간
+                    pauseOnFocus: true, //마우스 오버시 멈추도록 true
+                    pauseOnHover: true
+                });
+            });
+        </script>
+        <section class="contact" id="contact">
+            <div class="inner">
+                <div class="innertxt">
+                    <h2>PROJECT</h2>
+                    <h3>project 2 month</h3>
+                    <p>함께 드로잉 스터디 하고 싶으신가요? 우측의 폼을 작성해주세요.</p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body></html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>반디캠컴퍼니서브2</title>
+    <link rel="stylesheet" type="text/css" href="css/sub02/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/sub02/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/sub02/content.css" />
+    <link rel="stylesheet" href="css/sub02/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <meta property="og:type" content="website"/>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <div class="gnb_area">
+                <h1><a href="index.html">반디캠컴퍼니</a></h1>
+
+                <!-- gnb -->
+                <nav>
+                    <a href="#" class="btn_m_menu">메뉴열기</a>
+                    <ul class="gnb">
+                        <li class="home"><a href="index.html">BANDICAM<span>COMPANY</span></a></li>
+                        <li><a href="sub01.html" id="about">회사소개</a></li>
+                        <li><a href="sub02.html" id="product">SDK</a></li>
+                        <li><a href="sub03.html" id="partner">고객사</a></li>
+                        <li><a href="sub_04.html" id="contact">문의</a></li>
+                    </ul>
+                </nav>
+                <!-- //gnb -->
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- 서브비주얼 -->
+        <div class="area_subVisual">
+            <div class="sub_txt">
+                <span>오늘도 <br>당신의 <i>크리에이티브</i>한 <br><i>순간</i>을<br>레코딩합니다.</span>
+                <em>동영상 녹화 및 편집 소프트웨어를 개발하는<br>멀티미디어 전문기업</em>
+                <div class="sub_icon"></div>
+            </div>
+        </div>
+        <!-- //서브비주얼 -->
+        <!-- lnb -->
+        <div class="area_lnb">
+            <div class="inr">
+                <a class="btn_m_lnb" href="index.html">home</a>
+                <!-- 해당메뉴 클릭시 a태그에 on추가 -->
+                <ul>
+                    <li><a id="sub02" href="sub_02.html" data-lnb="sub">SDK 소개</a></li>
+                    <li><a id="sub02" href="#" data-lnb="sub">라이브러리</a></li>
+                    <li><a id="sub02" href="#" data-lnb="sub">견적서 출력</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //lnb -->
+        <script type="text/javascript">
+            $(".gnb > li > a").removeClass("on");
+            $("#product").addClass("on");
+            $("#" + "sub02").addClass("on");
+        </script>
+        <!-- //lnb -->
+
+        <section id="container" class="sub">
+            <!-- 본문 -->
+            <div id="product" class="product">
+                <h3>Middleware Solution</h3>
+                <h4> 반디 SDK는 동영상 캡처와 재생, 그리고 <br class="mo">압축파일을 처리해 주는 미들웨어 솔루션입니다.</h4>
+                <ul>
+                    <li><img src="images/sub02/sdk-bandicam-removebg-preview.png" alt="">
+                        <h5>캡처 라이브러리</h5>
+                        <p>반디 캡처 라이브러리는 게임/애플리케이션 내에서 동영상을 녹화할 수 있도록 도와주는 라이브러리이며, 현존하는 전세계에서 유일한 동영상 녹화 미들웨어입니다</p>
+                        <a href="https://www.bandicam.co.kr/company/sdk/bandi_capture_library/">자세히보기</a>
+                    </li>
+                    <li><img src="images/sub02/sdk-video-library-removebg-preview.png" alt="">
+                        <h5>비디오 라이브러리</h5>
+                        <p>반디 비디오 라이브러리는 게임/애플리케이션에서 동영상을 손쉽게 재생할 수 있도록 도와주는 라이브러리로써 게임 인트로 동영상이나 튜토리얼 동영상 등을 게임 내에서 보여줄 때 주로 사용됩니다.</p>
+                        <a href="https://www.bandicam.co.kr/company/sdk/bandi_video_library/">자세히보기</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //본문 -->
+        </section>
+        <!-- menu on control -->
+        ﻿
+        <!-- footer -->
+        <footer id="footer" class="scrollMain">
+            <div class="inr">
+                <div class="area_flist">
+                    <h2>contact us</h2>
+                    <ul>
+                        <li>반디캠컴퍼니(유)</li>
+                        <li>대표이사 : 오철욱</li>
+                        <li>주소 : 서울 영등포구 여의도동 국제금융로2길 37, 에스트레뉴 306호</li>
+                        <li>사업자등록번호 : 880-88-01719</li>
+                        <li>통신판매업신고번호 : 제2016-서울영등포-0857</li>
+                        <li>1833-7947</li>
+                        <li>bandicam@bandicam.com</li>
+                    </ul>
+                </div>
+                <ul class="area_ficon">
+                    <li data-ficon="01"><a href="https://www.bandicam.co.kr/">반디캠 pc화면 녹화</a></li>
+                    <li data-ficon="02"><a href="https://www.bandicam.co.kr/bandicut-video-cutter/"><span>반디컷 동영상 편집</span></a></li>
+                    <li data-ficon="03" class="web"><a href="https://www.bandicam.co.kr/company/sdk/bandi_video_library/sales/"> <span>SDK 문의</span></a></li>
+                    <li data-ficon="03" class="mob"><a href="https://www.bandicam.co.kr/company/sdk/bandi_video_library/sales/" target="_blank"><span>SDK 문의</span></a></li>
+                </ul>
+            </div>
+            <ul class="area_footer_info">
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li>Copyright © 2008-2020 Bandicam Company. All Rights reserved.</li>
+            </ul>
+
+            <a href="#wrap" class="btn_top active">맨위로</a>
+
+        </footer>
+        <!-- //footer -->
+    </div>
+</body></html>
