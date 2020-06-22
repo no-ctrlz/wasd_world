@@ -4,6 +4,31 @@ $(document).on('click', 'a[href="#"]', function (e) {
     e.preventDefault();
 });
 
+
+//https://lasdri.tistory.com/616
+	$(document).ready(function(){
+
+		$(document).keydown(function(e){
+
+			if( !($("input").is(":focus")) && !($("textarea").is(":focus")) ) {
+
+				if(e.which == 87) alert("w");
+                if(e.which == 65) alert("a");
+				if(e.which == 83) alert("s");
+				if(e.which == 68) alert("d");
+
+			}
+
+		});
+
+	});
+
+//콘솔에 키보드 번호 띄워주는 코드
+//$(document).keydown(function(event) {
+//  console.log(event.keyCode);
+//});
+//87 65 83 68 / wasd
+
 $(function(){
     $('header .menuOpen').on('click', function () {
         $('.gnb, .logo').addClass('on');
@@ -205,6 +230,58 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.js-items-slider-container4 .slider-for4',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        arrows: false,
+        accessibility: true,
+        onAfterChange: function (slide, index) {
+//            console.log("slider-nav4 change");
+//            console.log(this.$slides.get(index));
+            $('.current-slide').removeClass('current-slide');
+            $(this.$slides.get(index)).addClass('current-slide');
+        },
+        onInit: function (slick) {
+            $(slick.$slides.get(0)).addClass('current-slide');
+        }
+    });    
+    $('.box .js-items-slider-container5 .slider-for5').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.js-items-slider-container5 .slider-nav5'
+    });
+    $('.box .js-items-slider-container5 .slider-nav5').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.js-items-slider-container5 .slider-for5',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        arrows: false,
+        accessibility: true,
+        onAfterChange: function (slide, index) {
+//            console.log("slider-nav4 change");
+//            console.log(this.$slides.get(index));
+            $('.current-slide').removeClass('current-slide');
+            $(this.$slides.get(index)).addClass('current-slide');
+        },
+        onInit: function (slick) {
+            $(slick.$slides.get(0)).addClass('current-slide');
+        }
+    });
+    $('.box .js-items-slider-container6 .slider-for6').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.js-items-slider-container6 .slider-nav6'
+    });
+    $('.box .js-items-slider-container6 .slider-nav6').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.js-items-slider-container6 .slider-for6',
         dots: false,
         centerMode: false,
         focusOnSelect: true,

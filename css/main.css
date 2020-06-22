@@ -103,15 +103,18 @@ section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; }
     0%{opacity: 0; transform: scaleY(.9);}
     30%{opacity: 0; transform: scaleY(.9);}
 }
-.about .lefttxt{width: 50%; height: 50vh; position: relative; padding: 350px 0 0 0; }
-.about .lefttxt h3{margin-left: 25px; color: #222; font-size: 38px; position: absolute;}
+.about .lefttxt{width: 50%; height: 50vh; position: relative; padding: 350px 0 0 0; z-index: 0; }
+.about .lefttxt h3{margin-left: 25px; color: #222; font-size: 38px; position: absolute; top: 42%;}
 .about .lefttxt h3:after{content:'to enter my portfolio site.'; font-size: 14px; position: absolute; white-space: nowrap; bottom: -15px; left: 10px;font-family: 'Archivo narrow'; text-transform:uppercase; }
 .about .lefttxt h4{position: absolute; top: 50%; left: 5%; line-height: 1.7; font-size: 15px; }
-.about .lefttxt .btn{position: absolute; bottom: 20%; left: 5%; padding:15px 55px ; border-radius: 50px; border: 1px solid #aaa; font-size: 24px;}
-.about .lefttxt .myPhoto{position: absolute; left: 67%; bottom: 15%; width: 180px; height: 180px; background:url(../img/about/profileimg_color.jpg)no-repeat 50% 50%/ 180% 160%; border-radius: 50%; box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);}
+.about .lefttxt .btn{position: absolute; top: 70%; left: 5%; padding:15px 55px ; border-radius: 50px; border: 1px solid #aaa; font-size: 24px;}
+.about .lefttxt .myPhoto{position: absolute; left: 67%; top: 70%; width: 180px; height: 180px; background:url(../img/about/profileimg_color.jpg)no-repeat 50% 50%/ 180% 160%; border-radius: 50%; box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);}
 .about .lefttxt .myPhoto:after{content: 'profile here'; position: absolute; left: 50%; transform: translateX(-50%); top: 50%; white-space: nowrap; color: #fff;}
-.about .sideImg{position: absolute; width: 70%; height: 420px; top: 35%;  right: -20%; background: url(../img/about/clark-van-der-beken-O8rDfC6F3TU-unsplash.jpg)no-repeat left/cover;box-shadow: 15px 40px 15px rgba(0, 0, 0, 0.2);}
-
+.about .sideImg.motion{position: absolute; width: 70%; height: 420px; top: 35%;  right: -20%; background: url(../img/about/clark-van-der-beken-O8rDfC6F3TU-unsplash.jpg)no-repeat left/cover;box-shadow: 15px 40px 15px rgba(0, 0, 0, 0.2); animation-name: sideimgani; animation-duration: .8s; opacity: 1;}
+@keyframes sideimgani{
+    0%{opacity: 0; right:-120%;}
+    30%{opacity: 0; right:-120%;}
+}
 /*section.skill*/
 .skill{padding: 0 50px; box-sizing: border-box; position: relative; }
 .skill .visualText{position: absolute;bottom: 0; left: 25%; font-size: 96px; color: #aaa;}
@@ -213,33 +216,31 @@ section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; }
 .righttxt{width: 50%; height: 50vh; position: relative; padding: 350px 0 0 0; transform: translateX(100%);}
 .direction .righttxt h3{font-size: 38px; color: #222; text-align: right; margin-right: 8%; position: relative;}
 .direction .righttxt h3:after{content:':To show the road one has taken.'; font-size: 15px; position: absolute; white-space: nowrap; bottom: -15px; right: 0px; font-family: 'Archivo narrow'; text-transform: uppercase;}
-.direction .sideImg{position: absolute; width: 70%; height: 420px; top: 35%; left:-18%; background: url(../img/direction/direction_cover.jpg)no-repeat left/cover; box-shadow: 10px 40px 15px rgba(0, 0, 0, 0.2);}
+.direction .sideImg.motion{position: absolute; width: 70%; height: 420px; top: 35%; left:-18%; background:url(../img/direction/direction_cover.jpg)no-repeat left/cover; box-shadow: 10px 40px 15px rgba(0, 0, 0, 0.2); animation-name: sideimgani2; animation-duration: .8s; opacity: 1;}
+@keyframes sideimgani2{
+    0%{opacity: 0; left:-100%;}
+    30%{opacity: 0; left:-100%;}
+}
 .direction h4{position: absolute; top: 55%; right: 8%; line-height: 1.7; text-align: right; font-size: 15px;}
-.direction .btn{position: absolute; bottom: 15%; right: 8%; padding:15px 55px; border-radius: 50px; border: 1px solid #aaa; font-size: 24px;}
+.direction .btn{position: absolute; top: 70%; right: 8%; padding:15px 55px; border-radius: 50px; border: 1px solid #aaa; font-size: 24px;}
 
 /*footer*/
 .footer{position: relative; width: 100%; height: 50vh; background-color:#ccc; z-index: 10;}
 
-.footer:after{content: 'menu'; position: absolute; left: 10%; font-size: 28px; top: 50%; transform: translateY(-50%);}
-.footer li{position: absolute;width: 5%; left: 20%; top: 35%;}
-.footer li:nth-child(1){width: 6.3%;}
-.footer li:nth-child(2){left: 17.5%; top: 55.2%;}
-.footer li:nth-child(3){left: 22.6%; top: 55.2%;}
-.footer li:nth-child(4){left: 27.7%; top: 55.2%;}
-.footer li:nth-child(5):after{display: none;}
-.footer li:after{content:'work'; position: absolute; top: -15px; left: 0px; font-size: 12px;}
-.footer li:nth-child(2):after{content:'about'; left: -50px; top: 40px }
-.footer li:nth-child(3):after{content:'skill'; top: 95px; left: 0px;}
-.footer li:nth-child(4):after{content:'direction'; top: 40px; left: 100px;}
-/*.gnb .contact*/
 
-.footer .contact{ position: absolute; left: 55%; top:54%; transform: translateY(-50%); width: 14%;}
-.footer .contact h2{font-size: 28px}
-.footer .contact ul{position: relative; float: right; width: 100%; margin-top: 35px;}
-.footer .contact ul li{position: absolute; left: 100%; top: -95px; font-size: 12px; }
-.footer .contact ul li:nth-child(2){ white-space: nowrap; top: -55px;}
-.footer .contact ul li:nth-child(3){top: -15px;}
-.footer .contact ul li:after{display: none;}
-.footer .contact ul li:before{content: 'e-mail'; white-space: nowrap; margin-right: 45px;}
-.footer .contact ul li:nth-child(2):before{content: 'phone'; }
-.footer .contact ul li:nth-child(3):before{content: 'twitter'; margin-right: 30px;}
+.snslink{width: 33%; position: absolute; left: 25%; bottom: 75px; transform: translateX(-50%); display: flex;}
+.snslink li{margin-right: 15px;}
+.snslink li a{ z-index: 9999; display: block; }
+.snslink li a {
+  display: block;
+  opacity: .2;
+  -webkit-transform: scale(var(--scale, 0.8));
+          transform: scale(var(--scale, 0.8));
+  transition: -webkit-transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
+  transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
+  transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91), -webkit-transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
+}
+.snslink li a:hover {
+  --scale: 1;
+      opacity: .8;
+}

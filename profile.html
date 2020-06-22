@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scrolla.jquery.min.js"></script>
-    <script src="js/custom.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
 </head>
 
 <body>
-    <div class="wrap" id="">
-       <header>
+    <div class="wrap" id="top">
+        <header>
             <div class="innerheader">
                 <h1 class="logo"><a href="index.html">
                         <p><span>wasd</span><br> web visual studio</p>
@@ -30,7 +30,7 @@
             </div>
             <nav class="gnb">
                 <div class="leftbox">
-                      <li><a href="index.html#w" id="work"><img src="img/menu/w.svg" alt="" class="filter-white">
+                    <li><a href="index.html#w" id="work"><img src="img/menu/w.svg" alt="" class="filter-white">
                         </a></li>
                     <li><a href="index.html#a" id="about"><img src="img/menu/a.svg" alt="" class="filter-white"></a></li>
                     <li><a href="index.html#s" id="skill"><img src="img/menu/s.svg" alt="" class="filter-white"></a></li>
@@ -47,7 +47,7 @@
                 <a href="#" class="close"><img src="img/common/upload.svg" alt="" class="filter-white"></a>
             </nav>
         </header>
-        <section class="profile" id="">
+        <section class="profile" id="p">
             <div class="wrapper">
                 <input type="checkbox">
                 <div class="video">
@@ -56,7 +56,35 @@
                     </video>
                 </div>
                 <div class="text">
-                    <span data-text="Watch the video"></span>
+                    <span data-text="Watch the video">
+                        <div class="inner">
+                            <ul class="detail">
+                                <li>jimin lee.</li>
+                                <li>ui/ux designer | lives in south korea, gyeonggi-do</li>
+                                <li>반갑습니다!<br>신입 웹 디자이너 이지민입니다.</li>
+                            </ul>
+                            <ul>
+                                <li><a href="work.html" class="btn">웹사이트 작업 보러가기</a></li>
+                                <li><a href="#" class="btn">모션그래픽 작업 보러가기</a></li>
+                                <li><a href="#" class="btn">애니메이션 작업 보러가기</a></li>
+                            </ul>
+                            <ul class="snslink">
+                                <li><a class="youtube" href="https://www.youtube.com/channel/UCIrQ9rNHIhjZ9qi_TFhdHyw?view_as=subscriber" target="_blank">
+                                        <svg height="30pt" viewBox="0 0 512 512" width="30pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0" fill="#212121"/>
+                                            <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0" fill="#212121" /></svg>
+                                    </a></li>
+                                <li><a class="twitter" href="https://twitter.com/balloontail" target="_blank">
+                                        <svg height="30pt" viewBox="0 0 512 512" enable-background="new 0 0 24 24"  width="30pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0" fill="#212121" /></svg>
+                                    </a></li>
+                                <li><a class="github" href="https://github.com/no-ctrlz/wasd_world.git" target="_blank">
+                                        <svg enable-background="new 0 0 24 24" height="30pt" viewBox="0 0 24 24" width="30pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" fill="#212121" /></svg>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </span>
                 </div>
             </div>
             <div class="visualText">
@@ -65,37 +93,56 @@
                     <span class="b animate" data-animate="motion"></span>
                     <span class="c animate" data-animate="motion"></span>
                 </div>
-                <a href="#">
+                <a href="index.html#a">
                     <h2 class="word animate" data-animate="motion">profile</h2>
                 </a>
                 <h3>who am i?</h3>
             </div>
-            <div class="inner">
-               <ul class="text">
-                   <li>jimin lee.</li>
-                   <li>ui/ux designer |  lives in south korea, gyeonggi-do</li>
-                   <li>반갑습니다!<br>신입 웹 디자이너 이지민입니다.</li>
-               </ul>
-               <ul>
-                   <li><a href="work.html" class="btn">웹사이트 작업 보러가기</a></li>
-                   <li><a href="#" class="btn">모션그래픽 작업 보러가기</a></li>
-                   <li><a href="#" class="btn">애니메이션 작업 보러가기</a></li>
-               </ul>
-               <ul class="snslink">
-                   <li><a href="#" class="sns"><img src="img/icon/sns/youtube.svg" alt="youtube"></a></li>
-                   <li><a href="#" class="sns"><img src="img/icon/sns/twitter.svg" alt="twitter"></a></li>
-                   <li><a href="#" class="sns"><img src="img/icon/sns/logo%20(1).svg" alt="github"></a></li>
-               </ul>
-            </div>
         </section>
-        <section class="recordblock">
+        <section class="recordblock" id="record">
             <ul>
-                <li><div class="txt">계원예술고등학교 미술과 졸업</div></li>
-                <li><div class="txt">건국대학교 예술디자인대학 현대미술학과 졸업</div></li>
-                <li><div class="txt">강남 하이미디어 아카데미<br>영상을 활용한 UI/UX 웹 디자인 퍼블리셔 과정 수료.</div></li>
-            </ul>
+                <li>
+                    <div class="txt">계원예술고등학교 미술과 졸업</div>
+                </li>
+                <li>
+                    <div class="txt">건국대학교 예술디자인대학 현대미술학과 졸업</div>
+                </li>
+                <li>
+                    <div class="txt">강남 하이미디어 아카데미<br>영상을 활용한 UI/UX 웹 디자인 퍼블리셔 과정 수료.
+                    <p>영상을 활용한 UI/UX 웹디자인 & 웹퍼블리셔
+                        
+                    </div>
+                    <a href="#" class="togglefaq"><i class="icon-plus"></i>ncs 이수 능력 단위</a>
+                    <div class="faqanswer">
+                        <span class="selectable" id="selectable1" onclick="selectText(&quot;selectable1&quot;)">
+                            - 시안 디자인 개발 심화<br>
+                            - 서비스경험디자인 시나리오 개발<br>
+                            - 서비스경험디자인 관찰조사<br>
+                            - 스마트문화앱 UX설계<br>
+                            - 스마트문화앱 UI디자인<br>
+                            - 프로토타입 기초데이터 수집 및 스케치<br>
+                            - 프로토타입 제작 및 사용성 테스트<br>
+                            - 디자인 구성요소 설계<br>
+                            - 디자인 구성요소 제작<br>
+                            - 디지털디자인 사후관리<br>
+                            - 프로젝트완료 자료정리<br>
+                            - 프로젝트완료 결과보고서 작성<br>
+                            - 프로젝트완료 최종보고</span>
+                    </div>
+                    <script>
+                        $('.togglefaq').click(function(e) {
+                            e.preventDefault();
+                            var notthis = $('.active').not(this);
+                            notthis.find('.icon-minus').addClass('icon-plus').removeClass('icon-minus');
+                            notthis.toggleClass('active').next('.faqanswer').slideToggle(300);
+                            $(this).toggleClass('active').next().slideToggle("fast");
+                            $(this).children('i').toggleClass('icon-plus icon-minus');
+                        });
+                    </script>
+                    </li>
+                    </ul>
         </section>
-        <section class="readme">
+        <section class="readme" id="rm">
             <ul class="summary">
                 <li>
                     <p class="headmention">사용자의 시간을 아껴줄 디자인을 지향합니다.</p>
@@ -109,25 +156,99 @@
                     <p class="headmention">사용자의 시간을 아껴줄 디자인을 지향합니다.</p>
                     <p class="blabla"> 시각적요소와 웹접근성을 고려하며 트렌드를 물색하는 동시에 새로운 감각의 웹 사이트 레이아웃을 구상하며 조금이라도 더 사용자 친화적인 디자인을 고민하고 있습니다.</p>
                 </li>
-                </ul>
+            </ul>
         </section>
         <script>
             $(function() {
                 $(".summary").slick({
                     arrows: false, //화살표
                     dots: false, //인디케이터 해제
-                    fade: true, //페이드인 효과
+                    fade: false, //페이드인 효과
                     autoplay: true, //자동재생
                     pauseOnHover: true, //마우스오버, 포커스시 멈추는 것을 해제
                     pauseOnFocus: false
                 });
             });
         </script>
+   <section class="about" id="a">
+            <div class="visualText">
+                <div class="line">
+                    <span class="a animate" data-animate="motion"></span>
+                    <span class="b animate" data-animate="motion"></span>
+                    <span class="c animate" data-animate="motion"></span>
+                </div>
+                <a href="index.html#a">
+                    <h2 class="word animate" data-animate="motion">about</h2>
+                </a>
+            </div>
+            <div class="photobg" alt="어바웃헤더">
+               <p class="bgimg"><img src="img/about/clark-van-der-beken-O8rDfC6F3TU-unsplash.jpg" alt=""></p>
+            </div>
+            <div class="content">
+                <h4><br>더블유에이에스디는 어떻게 만들어졌을까요?<br>이곳에서 포트폴리오 사이트의 제작과정을 영상과 함께 확인하실 수 있습니다.<br></h4>
+                <div class="anothertitle">
+                    <h2>my<br>work<br> process</h2>
+                    <h3>hi-media<br>academy</h3>
+                </div>
+                <div class="monthpage">
+                    <ul class="processclick">
+                        <li class="on"><a target='_self'>mind map</a></li>
+                        <li><a target='_self'>card sortting</a></li>
+                        <li><a target='_self'>idea sketch</a></li>
+                        <li><a target='_self'>wire frame</a></li>
+                        <li><a target='_self'>usability test</a></li>
+                        <li><a target="_self">follow-up management</a></li>
+                        </ul>
+                        <div class="box on">
+                        <video autoplay="" loop="" muted="true" playsinline="" class="processvideo" poster="img/about/mindmap.3gp">
+                            <source src="img/about/mindmap.3gp" type="video/mp4">
+                        </video>
+
+                        </div>
+                        <div class="box">
+                         <video autoplay="" loop="" muted="true" playsinline="" class="processvideo" poster="">
+                    <source src="img/about/sortting.mp4" type="video/mp4"></video>
+
+                        </div>
+                        <div class="box">
+                        <video autoplay="" loop="" muted="true" playsinline="" class="processvideo" poster="">
+                    <source src="img/about/sortting.mp4" type="video/mp4"></video>
+
+                        </div>
+                        <div class="box">
+                        <div class="framevh">
+                            <video autoplay="" loop="" muted="true" playsinline="" class="processvideo vh" poster="">
+                                                <source src="img/about/wireframe.3gp" type="video/mp4"></video>
+                        </div>
+
+                        </div>
+                        <div class="box">
+
+                        </div>
+                        <div class="box">
+
+                        </div>
+
+                        </div>
+                        </div>
+        </section>
     </div>
     <script>
+    //탭메뉴
+    $(function(){
+        $('.monthpage .processclick li a').on('click', function(){
+            var num = $('.monthpage .processclick li a').index($(this)); //.tabMenu .list li a의 인덱스번호를 (num)에 저장 ->.index($(this));는 클릭한 리스트 자신
+            $('.monthpage .box').removeClass('on'); //모든탭 닫음
+            $('.monthpage .box:eq('+ num +')').addClass('on');
+            $('.monthpage .processclick li').removeClass('on'); //모든 li의 테두리변경
+            $(this).parent().addClass('on'); //.tabMenu .list li a 부모인 li에 on 클래스 부여 (해당 탭의 테두리 변경)
+        });
+    });
+
         $('.animate').scrolla({
-            mobile: false, // 모바일에서는 적용안함
+            mobile: true, // 모바일에서는 적용안함
             once: false // 처음스크롤시에만 적용
         });
     </script>
+    
 </body></html>

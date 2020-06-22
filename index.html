@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="font/font.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/videobg.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scrolla.jquery.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/slick.min.js"></script>
+<!--    <script src="js/scrollocue.js"></script>-->
 <!--<script src="js/MouseWheel.js"></script>-->
 </head>
 
 <body>
-    <div class="wrap">
+    <div class="wrap" id="container">
         <header>
             <div class="innerheader">
                 <h1 class="logo"><a href="index.html">
@@ -207,10 +207,10 @@
         <div class="lefttxt">
                       <h3>welcome!</h3>
                              <h4><br>환영합니다!<br><br> webable side는 웹사이트 작업을 모아둔 저의 포트폴리오 사이트입니다.<br>하단 버튼을 눌러 포트폴리오 제작과정에 대해 확인해보세요!</h4>
-                             <a href="menual.html" class="btn">more</a>
+                             <a href="profile.html#a" class="btn">more</a>
                              <a href="profile.html" class="myPhoto"></a>
              </div>
-            <a href="menual.html" class="sideImg"></a>
+            <a href="profile.html#a" class="sideImg animate" data-animate="motion"></a>
         </section>
         <section class="scrollMain skill" id="s">
             <div class="visualText">
@@ -302,7 +302,7 @@
                     <h2 class="word animate" data-animate="motion">direction</h2>
                 </a>
             </div>
-            <a href="direction.html" class="sideImg"></a>
+            <a href="direction.html" class="sideImg animate" data-animate="motion"></a>
             <div class="righttxt">
                 <h3>where am i headed?</h3>
                 <h4><br>현재 창의적인 가치를 보여주는 방식에 대해 고민하고 효율적인<br>웹 플랫폼 구축을 위해 공부하고 있습니다.</h4>
@@ -310,22 +310,37 @@
             </div>
         </section>
         <div class="footer">
-            <li><a href="#w" id="work"><img src="img/menu/w.svg" alt="" class="filter-white">
-                </a></li>
-            <li><a href="#a" id="about"><img src="img/menu/a.svg" alt="" class="filter-white"></a></li>
-            <li><a href="#s" id="skill"><img src="img/menu/s.svg" alt="" class="filter-white"></a></li>
-            <li><a href="#d" id="direction"><img src="img/menu/d.svg" alt="" class="filter-white"></a></li>
-            <div class="contact">
-                <h2>contact me</h2>
-                <ul>
-                    <li>srw159@naver.com</li>
-                    <li>010 2268 1781</li>
-                    <li>@balloontail</li>
-                </ul>
+            <div class="innerbox">
+                <span>recent update</span>
+                <p>2020.06.20</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="snslink">
+                    <a href="https://github.com/no-ctrlz/wasd_world.git" class="github"><svg enable-background="new 0 0 24 24" height="30pt" viewBox="0 0 24 24" width="30pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" fill="#212121" /></svg></a>
+                    <a class="twitter" href="https://twitter.com/balloontail" target="_blank"> <svg height="30pt" viewBox="0 0 512 512" enable-background="new 0 0 24 24"  width="30pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0" fill="#212121" /></svg></a>
+                </div>
             </div>
         </div>
     </div>
     <script>
+//        $("body").keypress(function(event) {
+//            switch (event.keyCode) {
+//                case 87:
+//                    $(document).getElementById('w').focus();
+//                    break;
+//                case 65:
+//                    $(document).getElementById('a').focus();
+//                    break;
+//                case 83:
+//                    $(document).getElementById('s').focus();
+//                    break;
+//                case 68:
+//                    $(document).getElementById('d').focus();
+//                    break;
+//            }
+//        });
+
         $('.animate').scrolla({
             mobile: true, // 모바일에서는 적용안함
             once: false // 처음스크롤시에만 적용
