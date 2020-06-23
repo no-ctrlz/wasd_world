@@ -59,14 +59,17 @@ section{width:  1400px;}
     0%{opacity: 0;}
     70%{opacity: 0;}
 }
-.tabmenu .inner .lefttext h2{position: absolute; top: 45%; font-size: 72px; line-height: .8; text-align: right; right: 30%; transform: translateX(-18%);}
+.tabmenu .inner .lefttext h2{position: absolute; top: 45%; font-size: 72px; line-height: .8; text-align: right; right: 33%; transform: translateX(-18%);}
 .tabmenu .inner:nth-child(2) .lefttext h2{top: 48%;}
 .tabmenu .inner:nth-child(4) .lefttext h2{font-size: 60px; top: 43%;}
-.tabmenu .inner:nth-child(5) .lefttext h2{font-size: 60px; top: 43%;}
+.tabmenu .inner:nth-child(5) .lefttext h2{font-size: 60px; top: 43%; right: 30%;}
 .tabmenu .inner .lefttext h2 span{color:yellow;}
-.tabmenu .inner .lefttext h2:before{content:'homepage re-newal'; position: absolute; top: -15%; right: 0; font-size: 28px; color: #fff; font-family:'Archivo Narrow'; text-transform: uppercase;}
-.tabmenu .inner:nth-child(2) .lefttext h2:before{content:'website & app responsive web'; top:-75%; position: absolute;}
-.tabmenu .inner h3{position: absolute; top: 60%; left: -19%; line-height: 1.7; font-size: 14px; text-align: right;}
+.tabmenu .inner:nth-child(3) .lefttext h2 span,.tabmenu .inner:nth-child(4) .lefttext h2 span{color:#ff8000;}
+.tabmenu .inner:nth-child(4) .lefttext h2,.tabmenu .inner:nth-child(6) .lefttext h2{color: #fff;}
+.tabmenu .inner .lefttext h2:before{content:'homepage re-newal'; position: absolute; top: -20%; right: 0; font-size: 28px; color: #ccc; font-family:'Archivo Narrow'; text-transform: uppercase;}
+.tabmenu .inner:nth-child(2) .lefttext h2:before{content:'website & app responsive web'; top:-80%;}
+.tabmenu .inner:nth-child(6) .lefttext h2:before{content:'Daily figure Drawing Life'; top:-40%;}
+.tabmenu .inner h3{position: absolute; top: 60%; left: -20%; line-height: 1.7; font-size: 14px; text-align: right;}
 .tabmenu .inner .lefttext a.btn{ position: absolute; top: 68%; left: -15%; padding:10px 25px; border-radius: 50px; border: 1px solid #aaa; font-size: 16px; box-sizing: border-box;}
 .tabmenu .inner .lefttext #b{position: absolute; left: 0%; }
 .tabmenu .inner .lefttext #c{position: absolute; left: 15%; }
@@ -76,8 +79,8 @@ section{width:  1400px;}
 
 .slick-dots{z-index: 999; position: absolute; top:830px; width: 100%; height: 50px;}
 .slick-dots li{float: left; margin-right: 10%;  }
-.slick-dots li.slick-active{color:red;}
+.slick-dots li.slick-active{color:#ff3b00;}
 .slick-dots #slick-slide-control00,.slick-dots #slick-slide-control01,.slick-dots #slick-slide-control02,.slick-dots #slick-slide-control03,.slick-dots #slick-slide-control04,.slick-dots #slick-slide-control05{ background: none; border:none;}
-.slick-dots #slick-slide-control00:hover,.slick-dots #slick-slide-control01:hover,.slick-dots #slick-slide-control02:hover,.slick-dots #slick-slide-control03:hover,.slick-dots #slick-slide-control04:hover,.slick-dots #slick-slide-control05:hover{background: none; border:none; color:red; outline: none;}
-.slick-dots li.slick-active #slick-slide-control00,.slick-dots li.slick-active #slick-slide-control01,.slick-dots li.slick-active #slick-slide-control02,.slick-dots li.slick-active #slick-slide-control03,.slick-dots li.slick-active #slick-slide-control04,.slick-dots li.slick-active #slick-slide-control05{color:red; outline: none;}
+.slick-dots #slick-slide-control00:hover,.slick-dots #slick-slide-control01:hover,.slick-dots #slick-slide-control02:hover,.slick-dots #slick-slide-control03:hover,.slick-dots #slick-slide-control04:hover,.slick-dots #slick-slide-control05:hover{background: none; border:none; color:#ff3b00; outline: none;}
+.slick-dots li.slick-active #slick-slide-control00,.slick-dots li.slick-active #slick-slide-control01,.slick-dots li.slick-active #slick-slide-control02,.slick-dots li.slick-active #slick-slide-control03,.slick-dots li.slick-active #slick-slide-control04,.slick-dots li.slick-active #slick-slide-control05{color:#ff3b00; outline: none;}
 /*----------------------------------------*/

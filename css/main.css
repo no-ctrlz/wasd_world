@@ -3,27 +3,33 @@
 /*mainVisual*/
 .mainVisual{width: 1400px; height: 100vh; position: relative; margin: 0 auto;}
 .mainVisual .title{position: absolute; left: 40%; top: 50%; transform: translate(-50%,-50%);}
-.mainVisual .title .line{position: absolute; top: 59%; z-index: 10;}
-.mainVisual .title .line.vertical{position: absolute;left: 2%; top: 55%; z-index: 10; transform: rotate(-90deg); }
-.mainVisual .title .line.vertical .a{position: absolute; height: 7px; width: 441px; background: #fff; top: 22px; animation-name: mainline; animation-duration: .5s;}
-.mainVisual .title .line.vertical .b{position: absolute; top: 38px;  height: 7px; width: 441px; background: #fff; animation-name: mainline; animation-duration: .5s;}
-.mainVisual .title .line.vertical .c{position: absolute; top: 54px; animation-name: mainline; animation-duration: .5s;  height: 7px; width: 441px; background: #fff;}
-@keyframes mainline{
-    
-}
-.mainVisual .title .line.horizon .a{position: absolute; height: 10px; width: 441px; background: #fff; top: 10px; animation-name: mainline2; animation-duration: .5s;}
-.mainVisual .title .line.horizon .b{position: absolute; top: 36px;  height: 10px; width: 441px; background: #fff; animation-name: mainline2; animation-duration: .5s;}
-.mainVisual .title .line.horizon .c{position: absolute; top: 62px; animation-name: mainline2; animation-duration: .5s;  height: 10px; width: 441px; background: #fff;}
-@keyframes mainline2{   
-}
-.mainVisual .title h1{font-size: 96px; line-height: 0.7; color: #aaa; z-index: 100; }
-.mainVisual .title h1 span{z-index: 11;}
+.mainVisual .title h2{font-size: 96px; line-height: 0.7; color: #aaa; z-index: 100; }
+.mainVisual .title h2 span{z-index: 11;}
 .mainVisual .title img{width: 47%; position: absolute; left: 115%; top: 55%;transform: translateY(-50%);}
-.mainVisual .title .line.vertical{animation-name: firstani; animation-duration: 1.2s;}
-@keyframes firstani{
-}
-.mainVisual .title .line.horizon{animation-name: firstani2; animation-duration: 1.2s;}
 
+/*https://codepen.io/sooooooo/pen/zVOGmb*/
+.mainVisual .title h2 span{
+    width: fit-content;
+  background-image: url(https://img.freepik.com/free-photo/_40163-61.jpg?size=626&ext=jpg);  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-name: fluid;
+  background-size: 1000%;
+  color: #aaa;
+}
+@keyframes fluid {
+  from {
+    background-position: top;
+  }
+
+  to {
+    background-position: bottom;
+  }
+}
 /*menual .goGuide*/
 a.menual{position:fixed; width: 50px; height: 50px; right:15px; bottom:15px; z-index: 999;}
 .menual .goGuide img{width: 100%; height: 100%;}
@@ -108,8 +114,22 @@ section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; }
 .about .lefttxt h3:after{content:'to enter my portfolio site.'; font-size: 14px; position: absolute; white-space: nowrap; bottom: -15px; left: 10px;font-family: 'Archivo narrow'; text-transform:uppercase; }
 .about .lefttxt h4{position: absolute; top: 50%; left: 5%; line-height: 1.7; font-size: 15px; }
 .about .lefttxt .btn{position: absolute; top: 70%; left: 5%; padding:15px 55px ; border-radius: 50px; border: 1px solid #aaa; font-size: 24px;}
-.about .lefttxt .myPhoto{position: absolute; left: 67%; top: 70%; width: 180px; height: 180px; background:url(../img/about/profileimg_color.jpg)no-repeat 50% 50%/ 180% 160%; border-radius: 50%; box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);}
-.about .lefttxt .myPhoto:after{content: 'profile here'; position: absolute; left: 50%; transform: translateX(-50%); top: 50%; white-space: nowrap; color: #fff;}
+.about .lefttxt .myPhoto{position: absolute; left: 67%; top: 70%; width: 180px; height: 180px; background:url(../img/about/profileimg_color.jpg)no-repeat 50% 50%/ 180% 160%; border-radius: 50%; box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.15); opacity: .75; filter: grayscale();
+  -webkit-transform: scale(var(--scale, 0.8));
+          transform: scale(var(--scale, 0.8));
+  transition: -webkit-transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
+  transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
+  transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91), -webkit-transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
+}
+
+.about .lefttxt .myPhoto:hover {
+  --scale: 1;
+    opacity: 1;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.2);
+    filter: none;
+}
+.about .lefttxt .myPhoto:after{content: 'profile here'; position: absolute; left: 50%; transform: translateX(-50%); top: 50%; white-space: nowrap; color: #fff; transition: all 0.1s;}
+.about .lefttxt .myPhoto:hover:after{color: transparent; transition: all 0.1s;}
 .about .sideImg.motion{position: absolute; width: 70%; height: 420px; top: 35%;  right: -20%; background: url(../img/about/clark-van-der-beken-O8rDfC6F3TU-unsplash.jpg)no-repeat left/cover;box-shadow: 15px 40px 15px rgba(0, 0, 0, 0.2); animation-name: sideimgani; animation-duration: .8s; opacity: 1;}
 @keyframes sideimgani{
     0%{opacity: 0; right:-120%;}
@@ -203,8 +223,9 @@ section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; }
   from { transform: rotate(360deg); }
 }
 
-#slick-slide-control30,#slick-slide-control31{border: none; background: #aaa; border-radius: 50%; width: 15px; height: 15px; position: absolute; right: 0; top: 50%;}
-#slick-slide-control31{top: 40%;}
+#slick-slide-control30,#slick-slide-control31{border: none; background: #aaa; border-radius: 50%; width: 35px; height: 35px; position: absolute; background: url(/img/common/upload.svg)no-repeat center/cover; top: 51%; }
+#slick-slide-control30{left: 0; transform: rotate(-90deg);}
+#slick-slide-control31{right: 0px; transform: rotate(90deg);}
 /*section .direction*/
 
 .direction{padding: 0 50px; box-sizing: border-box; position: relative;}
@@ -226,12 +247,21 @@ section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; }
 
 /*footer*/
 .footer{position: relative; width: 100%; height: 50vh; background-color:#ccc; z-index: 10;}
+.footer .innerbox{width: 1400px; height: 500px; margin: 0 auto; position: relative; }
+.footer .innerbox ul { padding:250px 100px; box-sizing: border-box;}
+.footer .innerbox ul li{float: left; margin-right: 5%; 
+}
+/*https://css-tricks.com/adding-stroke-to-web-text/ 텍스트 테두리*/
+.footer .innerbox ul li:first-child{width: 15%;-webkit-text-stroke: 1px #666; color: aliceblue;}
+.footer .innerbox ul li:nth-child(2){width: 10%; -webkit-text-stroke: 1px #666; color: aliceblue;}
+.footer .innerbox ul li:nth-child(3){width: 10%; font-family: 'Archivo Narrow','Nanum Gothic';}
+.footer .innerbox ul li:nth-child(4){width: 10%;font-family: 'Archivo Narrow','Nanum Gothic';}
+.footer .innerbox ul li:last-child{width: 10%; font-family: 'Archivo Narrow','Nanum Gothic'}
 
-
-.snslink{width: 33%; position: absolute; left: 25%; bottom: 75px; transform: translateX(-50%); display: flex;}
-.snslink li{margin-right: 15px;}
-.snslink li a{ z-index: 9999; display: block; }
-.snslink li a {
+.snslink{width: 10%; position: absolute; left: 85%; top: 250px; transform: translateX(-50%); display: flex;}
+.snslink a {
+    margin-right: 10px;
+    z-index: 9999;
   display: block;
   opacity: .2;
   -webkit-transform: scale(var(--scale, 0.8));
@@ -240,7 +270,7 @@ section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; }
   transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
   transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91), -webkit-transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
 }
-.snslink li a:hover {
+.snslink a:hover {
   --scale: 1;
-      opacity: .8;
+    opacity: .8;
 }

@@ -1,5 +1,42 @@
 @charset "utf-8";
-
 section{width: 1400px; margin: 0 auto; position: relative;height: 100vh;}
-.toppage{height: 30vh;}
-.menual{height: 100%;}
+.toppage{height: 75vh; width: 1400px; overflow: hidden; padding-top: 5vh; box-sizing: border-box; }
+.toppage .visualText{position: absolute; left: 50%; top: 30%; transform:translate(-50%,-50%); color: #aaa;}
+.toppage .visualText .line.left .a.motion{position: absolute; left:0px; bottom: 19px; width: 0%; height: 4.5px; background: #fff; animation-name: line2; animation-duration: 1.8s;}
+.toppage .visualText .line.left .b.motion{position: absolute; left:0px; bottom: 11px;  width: 0%; height: 4.5px; background: #fff;animation-name: line2; animation-duration: 1.7s;}
+.toppage .visualText .line.left .c.motion{position: absolute; left:0px; bottom: 3px;  width: 0%; height: 4.5px; background: #fff; animation-name: line2; animation-duration: 1.5s;}
+.toppage .visualText .line.right .a.motion{position: absolute; right:0px; bottom: 23px; width: 0%; height: 4.5px; background: #fff; animation-name: line2; animation-duration: 1.8s;}
+.toppage .visualText .line.right .b.motion{position: absolute; right:0px; bottom: 15px;  width: 0%; height: 4.5px; background: #fff;animation-name: line2; animation-duration: 1.7s;}
+.toppage .visualText .line.right .c.motion{position: absolute; right:0px; bottom: 7px;  width: 0%; height: 4.5px; background: #fff; animation-name: line2; animation-duration: 1.5s;}
+@keyframes line2{
+    0%{width: 365%;}
+    50%{width: 365%;}
+}
+.toppage .visualText .word.motion{}
+.toppage .visualText .word.motion span{
+    width: fit-content;
+  font-weight: normal;
+  text-align: center;
+  background-image: url(https://img.freepik.com/free-photo/_40163-61.jpg?size=626&ext=jpg);  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    animation-timing-function: linear;
+  animation-name: fluid;
+  background-size: 1000%;
+  color: black;
+}
+@keyframes fluid {
+  from {
+    background-position: top;
+  }
+
+  to {
+    background-position: bottom;
+  }
+}
+
+.video-background{width: 100%;}
+/*.menual{height: 100%;}*/

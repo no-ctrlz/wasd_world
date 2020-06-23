@@ -11,7 +11,6 @@
 }
 
 /* reset */
-
 .slick-slide{ outline: none;}
 /*slick에 자동으로 생성되는 아웃라인 해제 200531*/
 html,body {
@@ -32,10 +31,13 @@ div svg:hover {
 
 
 /*svg*/
+/*#aaa*/
+.filtergray{filter:invert(78%) sepia(11%) saturate(19%) hue-rotate(21deg) brightness(86%) contrast(91%);}
 .filter-gray{filter: invert(71%) sepia(91%) saturate(0%) hue-rotate(83deg) brightness(95%) contrast(102%);}
 .filter-white{filter: invert(100%) sepia(1%) saturate(7496%) hue-rotate(157deg) brightness(103%) contrast(101%);
 }
 .filter-yellow{filter: invert(75%) sepia(87%) saturate(1128%) hue-rotate(360deg) brightness(110%) contrast(107%);}
+.filter-orange{filter: invert(70%) sepia(44%) saturate(6827%) hue-rotate(357deg) brightness(102%) contrast(110%);}
 /*.btn:hover*/
 .btn{transition: all .3s;}
 .btn:hover{background: #000; color: #fff; transition: all .5s;}

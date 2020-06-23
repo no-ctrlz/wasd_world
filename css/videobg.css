@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
 */
-  margin-left: 550px;
+  margin-left: 650px;
   -webkit-clip-path: var(--clip-path);
           clip-path: var(--clip-path);
   transition: -webkit-clip-path var(--duration) var(--timing-function);

@@ -1,11 +1,7 @@
-# wasd_world
-myfirstporfoliopage
-recent update_2020.06.20
-
 ***read me***
 유지가능한 사후관리를 위하여 각 항목별 데이터 정리를 했습니다.
 
-20200622 기준
+20200623 기준
 
 html 파일
 - index.html

@@ -1,6 +1,6 @@
 /*profile & about page */
 /*프로필과 페이지 제작과정에 대해*/
-.wrap{overflow: hidden; height: auto;}
+.wrap{overflow: hidden; height: auto; }
 section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; 
 /*    background: #999;*/
 }
@@ -21,10 +21,17 @@ section.profile .visualText{position: absolute; left: 5%; top: 30%; transform:tr
 .profile .visualText h3{font-size: 36px; transform: translate(400px,-80px);}
 .profile .visualText h3:after{content: 'talk about my vision.'; font-family: 'Archivo Narrow'; text-transform: uppercase; font-size: 17px; position: absolute; left: 8px;bottom: -22px;}
 
-.recordblock,.readme{}
-.recordblock{height: 50vh; position: relative;}
-.recordblock li{ display: flex; font-size: 14px;}
-
+/*recordblock*/
+.recordblock{height: 50vh; position: relative; font-family: 'Nanum Gothic';}
+.recordblock ul{padding: 100px 250px; display: flex; text-align: center;}
+.recordblock ul li{ font-size: 14px; width: 33%;}
+.recordblock ul li .txt img{width: 100px;}
+.recordblock ul li:first-child{margin-top: -15px;}
+.recordblock ul li:first-child .txt img{width: 130px;}
+.recordblock ul li .txt p{margin-top: 25px;}
+.recordblock ul li:first-child .txt p{margin-top: 10px; }
+.togglefaq{color:#7fa1ff;}
+.faqanswer{display: none;}
 /*--------------*/
 .readme{position: relative; height: 30vh;}
 .readme .summary{width: 1400px; margin: 0 auto;position: absolute;}
@@ -62,20 +69,37 @@ section.about#a{padding: 0; width: 100%; position: relative; height: 130vh;}
 
 
 /*탭메뉴*/
-.monthpage{width: 1400px; margin: 50px auto; position: relative; height: 720px; }
+.processpage{width: 1400px; margin: 50px auto; position: relative; height: 720px; }
 
 /*상단클릭메뉴*/
-.monthpage .processclick{ width: 840px; overflow-y:hidden;position: absolute; top:-100px; left:40%;}
-.monthpage .processclick li {float: left; width: 140px; height: 50px; line-height: 50px; box-sizing: border-box; border-bottom: 1px solid #999; background:aliceblue; font-size: 16px; border-top-left-radius: 15px; border-top-right-radius: 15px;}
-.monthpage .processclick li.on{border: 1px solid #999; border-bottom-color: transparent;}
-.monthpage .processclick li a{display: block; width: 100%; height: 100%; text-align: center;}
+.processpage .processclick{ width: 840px; overflow-y:hidden;position: absolute; top:-100px; left:40%;}
+.processpage .processclick li {float: left; width: 140px; height: 50px; line-height: 50px; box-sizing: border-box; border-bottom: 1px solid #999; background:aliceblue; font-size: 16px; border-top-left-radius: 15px; border-top-right-radius: 15px;}
+.processpage .processclick li.on{border: 1px solid #999; border-bottom-color: transparent;}
+.processpage .processclick li a{display: block; width: 100%; height: 100%; text-align: center;}
 
 /*탭내부박스*/
-.monthpage .box{position: absolute; top:0px; left: 0; background: #fff; width: 100%; height: 720px; padding: 30px 20px; box-sizing: border-box; text-align: center; font-size: 100px; display: none;}
-.monthpage .box.on{display: block;}
-.monthpage .box .processvideo{ width: 720px; height: 320px;}
-.monthpage .box .processvideo.vh{position: absolute;top: -250px; left: -180px; height:960px;}
-.framevh{width: 340px; height: 450px; overflow: hidden; background: #788;position: relative; float: right; transform: translateX(-130%);}
+.processpage .box{position: absolute; top:0px; left: 0; background: #fff; width: 100%; height: 720px; box-sizing: border-box; text-align: center; font-size: 100px; display: none; padding: 150px 0px 0px 150px;}
+.processpage .box.on{display: block;}
+.processpage .box .lefttxt{float: left; font-size: 28px;}
+.processpage .box .lefttxt h3{font-size: 28px;}
+.processpage .box .lefttxt p{margin-top: 25px; font-size: 16px; margin-bottom: 75px; }
+.processpage .box .lefttxt span{margin-right: 15px; font-style: italic; display:flex; color: #aaa; margin-top: 5px; margin-left: 50%;}
+.processpage .box .righttxt{width: 50%; position: absolute; right: 0; text-align: left; padding: 150px 0px;}
+.processpage .box .righttxt h3{font-size: 28px;}
+.processpage .box .righttxt p{margin-top: 25px; font-size: 16px; margin-bottom: 75px; }
+.processpage .box .righttxt span{margin-right: 15px; font-style: italic; display:flex; color: #aaa; margin-top: 5px; margin-left: 50%;}
+.processpage .box .processvideo{ width: 720px; height: 320px;}
+.processpage .box .processvideo.vh{position: absolute;top: 0px; left: -150px; height:580px;}
+.framevh{width: 420px; height: 560px; overflow: hidden; 
+/*    background: #788;*/
+    position: relative; float: right; transform: translateX(-180%);}
+
+.processpage .box#idea .lefttxt{text-align:left; padding: 150px 0px; }
+.processpage .box#idea img{ width: 380px; }
+.processpage .box#idea img:last-child{width: 180px; position: absolute; left: 45%; top: 480px;}
+.processpage .box#usertest .lefttxt{text-align:left; padding: 150px 0px; }
+.processpage .box#usertest img{ width: 380px; }
+.processpage .box#usertest img:last-child{width: 180px; position: absolute; left: 45%; top: 480px;}
 /*processclick*/
 .processclick a{display: block; cursor: pointer;}
 

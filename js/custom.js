@@ -93,7 +93,7 @@ $(function () {
         dots: true, //인디케이터 해제
         fade: true,
         autoplay: true, //자동재생
-        autoplaySpeed: 5000,
+        autoplaySpeed: 4000,
         pauseOnHover: true, //마우스오버, 포커스시 멈추는 것을 해제
         pauseOnFocus: true
     });
