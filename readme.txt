@@ -10,6 +10,7 @@ html 파일
 - profile.html
 - direction.html
 
+
 css 파일
 커스텀 스타일 시트
 -main.css
@@ -23,6 +24,18 @@ css 파일
 스크립트 관련 스타일 시트
 -animate.min.css
 -slick.css
+
+
+js 파일
+jquery-3.3.1.min.js
+scrolla.jquery.min.js
+slick.min.js
+custom.js
+
+스크립트 부분오류가 있었기에 일시적으로 비활성화시켜둠(20200623 기준) 
+jquery.lazyload.min.js
+mousewheel.js
+
 
 font 폴더
 -big black bear 웹폰트 형식의 파일들
