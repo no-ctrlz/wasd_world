@@ -66,11 +66,11 @@ section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; }
 .tabmenu #website .slideImg, .tabmenu #cell .gifwork{width: 50%; height: 100vh; position: relative; left: 45%; top: 0;}
 .tabmenu #website .slideImg .viewbox, .tabmenu #motiongraphic .gifwork a, .tabmenu #cell .gifwork a{position: absolute; top: 50%;left: 15%; transform: translateY(-50%); width: 560px; height: 370px;  border-radius: 10px; z-index: 10; box-shadow: -5px 25px 30px rgba(0, 0, 0, 0.2); overflow: hidden;}.tabmenu #motiongraphic .gifwork a{left: 5%;}
 .tabmenu #website .slideImg .viewbox li .img, .tabmenu #cell .gifwork a .img {width: 560px;height: auto;}
-.tabmenu #motiongraphic .gifwork a .img{width: 720px; height:auto; position: absolute; right: -14%;}
+.tabmenu #motiongraphic .gifwork a .img{width: 720px; height:auto; position: absolute; right: -14%; top: -10px;}
 .tabmenu #motiongraphic .gifwork a .img img, .tabmenu #cell .gifwork a .img img{width: 100%;}
 .tabmenu #website .slideImg .viewbox li .img img{width: 100%; height: 100%;}
 /*--------------------*/
-.workpage .tabmenu .list{display: block; font-family: 'Archivo'; text-transform: uppercase; font-weight: bold; overflow: hidden; width: 100%; z-index: 100; height: 50px; position: absolute; top: 90vh; left: 0;}
+.workpage .tabmenu .list{display: block; font-family: 'Archivo'; text-transform: uppercase; font-weight: bold; overflow: hidden; width: 100%; z-index: 50; height: 50px; position: absolute; top: 90vh; left: 0;}
 .workpage .tabmenu > li a{display: block; padding: 0 20px; box-sizing: border-box; color:#aaa; transition: all .2s;}
 .workpage .tabmenu li a:hover{color: red; transition: all .3s;}
 
@@ -179,6 +179,8 @@ section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; }
     70%{transform: scale(0);}
 }
 .circleBox .circle:nth-child(1).motion{animation-duration: 1.8s;}
+.circleBox .circle{transition: scale 0.3s;}
+.circleBox .circle:hover{transform: scale(1.1); transition: scale 0.2s;}
 .circleBox .circle:nth-child(3).motion{animation-duration: 1.5s;}
 .circleBox .circle:nth-child(4).motion{animation-duration: 2s;}
 .circleBox .circle:nth-child(5).motion{animation-duration: 2.3s;}
@@ -212,7 +214,7 @@ section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; }
   background: #fff;
 }
 
-.circleBox .circle:after {  content: '';  display: block;  left: 0;  top: 0;  width: 100%;  height: 100%;  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));  z-index: 11;  transform: translate3d(0, 0, 0);}
+.circleBox .circle:after { content: '';  display: block;  left: 0;  top: 0;  width: 100%;  height: 100%;  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));  z-index: 11;  transform: translate3d(0, 0, 0);}
 
 .circleBox .circle .title {  position: absolute;  left: 0;  top: -25%;  width: 100%;  z-index: 1;  line-height: 300px;  text-align: center;  transform: translate3d(0, 0, 0);  color:#fff;  letter-spacing: .1em;  font-size: 48px; text-shadow: 0 1px 0 rgba(black, .1); text-indent: .3em; font-family: 'Archivo narrow' ;
     font-weight: 500;
@@ -223,7 +225,7 @@ section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; }
   from { transform: rotate(360deg); }
 }
 
-#slick-slide-control30,#slick-slide-control31{border: none; background: #aaa; border-radius: 50%; width: 35px; height: 35px; position: absolute; background: url(/img/common/upload.svg)no-repeat center/cover; top: 51%; }
+#slick-slide-control30,#slick-slide-control31{border: none; background: #aaa; border-radius: 50%; width: 35px; height: 35px; position: absolute;background: url(/img/common/upload.svg)no-repeat center/cover; top: 51%; }
 #slick-slide-control30{left: 0; transform: rotate(-90deg);}
 #slick-slide-control31{right: 0px; transform: rotate(90deg);}
 /*section .direction*/
