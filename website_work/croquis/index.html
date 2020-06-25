@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
@@ -141,12 +142,26 @@
                 });
             });
         </script>
-        <section class="contact" id="contact">
+        <section class="contacthere" id="contacthere">
             <div class="inner">
                 <div class="innertxt">
                     <h2>PROJECT</h2>
                     <h3>project 2 month</h3>
                     <p>함께 드로잉 스터디 하고 싶으신가요? 우측의 폼을 작성해주세요.</p>
+                </div>
+                <div class="contact">
+                    <div class="contact-title">
+                        <h1>contact here</h1>
+                        <h2>send the message</h2>
+                    </div>
+                    <div class="contact-form" >
+                        <form id="contact-form" method="post" action="contact-form-handler.php">
+                            <input type="name" type="text" class="form-control" placeholder="your name" required><br>
+                            <input type="email" type="text" class="form-control" placeholder="your email" required><br>
+                                <textarea name="message" class="form-control" placeholder="message" rows="4" required></textarea><br>
+                                <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                        </form>
+                    </div>
                 </div>
             </div>
 
