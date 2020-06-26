@@ -1,7 +1,7 @@
 /*profile & about page */
 /*프로필과 페이지 제작과정에 대해*/
 .wrap{overflow: hidden; height: auto; }
-section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; 
+section{width: 1400px; height: 100vh; position: relative; margin: 0 auto; margin-top: 70px;
 /*    background: #999;*/
 }
 section.profile .visualText{position: absolute; left: 5%; top: 30%; transform:translateY(-50%); color: #aaa; z-index: 0; transition: all .3s;}
