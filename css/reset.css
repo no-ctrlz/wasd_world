@@ -67,7 +67,7 @@ header.on .innerheader .btn_menu{top: 15px; transition: all 0.5s;}
 .btn_menu{float: right; position: absolute; top: 25px; right: 20px; width: 40px; transition: all 0.3s;}
 .btn_menu img{display: block; width: 100%; height: 100%;}
 nav{position: relative; width: 100%; height: 50vh; background-color:#ccc; z-index: -1;}
-.gnb{position:absolute; background-color:#ccc; top:-600px; transition: all .8s;}
+.gnb{position:absolute; background-color:#ccc; top: -1650px; transition: all .8s;}
 .gnb.on{top: 0; transition: all .8s; overflow: hidden;}
 .gnb.on .menuOpen{display: none;}
 .gnb .close{ font-size: 40px; color:#ddd; display: block;}
