@@ -48,14 +48,56 @@
                 <a href="#" class="close"><img src="img/common/upload.svg" alt="" class="filter-white"></a>
             </nav>
         </header>
+         <aside id="aside">
+             <ul class="sideflow">
+                 <li><a href="#"><img src="img/icon/open-menu.svg" alt=""></a>
+                     <ul class="inner">
+                         <li><a href="#w"><img src="img/menu/w.svg" alt=""></a></li>
+                         <li><a href="#a"><img src="img/menu/a.svg" alt=""></a></li>
+                         <li><a href="#s"><img src="img/menu/s.svg" alt=""></a></li>
+                         <li><a href="#d"><img src="img/menu/d.svg" alt=""></a></li>
+                     </ul>
+                 </li>
+                 <li><a href="menual.html" class="menual">
+                <span class="goGuide"><img src="img/icon/manual.svg" alt=""></span>
+            </a></li>
+             </ul>
+        </aside>
+        <script>
+            $(function () {
+    $(".sideflow > li > a").on('mouseenter focus', function () {
+        var sideIndex = $(".sideflow > li > a").index($(this));
+
+        $(".sideflow .inner").removeClass('on');
+        $('.sideflow .inner:eq(' + sideIndex + ')').addClass('on');
+    });
+    $('.sideflow').on("mouseleave", function () {
+        $('.sideflow .inner').removeClass('on');
+    });
+});
+            
+            var scrollTop = 0;
+            scrollTop = $(document).scrollTop();
+            sideBar();
+
+            //윈도우창 조절시에 이벤트
+            $(window).on('scroll resize', function() {
+                scrollTop = $(document).scrollTop();
+                sideBar();
+            });
+
+            //사이드바함수
+            function sideBar() {
+                $('#aside').css({
+                    'top': (scrollTop + 480) + 'px'
+                });
+            }
+        </script>
         <!-- work-->
         <section class="scrollMain mainVisual">
             <div class="title">
                 <h2><span>W</span>EB<br><span>A</span>BLE<span>S</span>I<span>D</span>E</h2>
             </div>
-            <a href="menual.html" class="menual">
-                <span class="goGuide"><img src="img/icon/manual.svg" alt=""></span>
-            </a>
             <div class="photobg" alt="영상">
                 <video autoplay="" loop="" muted="true" playsinline="" class="video-background">
                     <source src="img/logowhite.mp4">

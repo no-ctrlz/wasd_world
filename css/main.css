@@ -30,8 +30,18 @@
     background-position: bottom;
   }
 }
+/*sidebar*/
+.sideflow ul.inner{width: 75px; height: 0; 
+     padding: 0px; line-height: 0px;overflow: hidden; position: absolute; right: 75px; opacity: 0;}
+.sideflow ul.inner.on{opacity: 1; height: 75px; width: 275px; top: -20px; right: -35px; padding: 20px 25px; box-sizing: border-box; line-height: 30px; transition: opacity 0.5s, all 0.5s; }
+.sideflow ul.inner li{float: left; width: 50px;margin-right: 1px; }
+.sideflow ul.inner li:first-child{width: 63px; }
+.sideflow ul.inner img{width: 100%;}
+#aside{position: absolute; right: 40px; width: 50px; height: 80px; border-radius: 5px; transition: top 0.3s; z-index: 99;}
+#aside li{text-align: center; font-size: 28px; margin-bottom: 5px; }
+#aside li a{display: block; cursor: pointer; }
 /*menual .goGuide*/
-a.menual{position:fixed; width: 50px; height: 50px; right:15px; bottom:15px; z-index: 999;}
+#aside li a.menual{width: 50px; height: 50px;}
 .menual .goGuide img{width: 100%; height: 100%;}
 /*page*/
 .wrap{width: 100%; height: 100%; overflow: hidden;}

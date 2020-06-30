@@ -1,6 +1,6 @@
 /*한페이지씩 분류*/
 header{ z-index: 98; transition: all .3s; top: -100px;}
-header.on{top: 0px; }
+header.on{top: 0px;}
 header .innerheader{border-bottom : none;}
 header.on .innerheader .logo p{color: #fff;}
 header.on .innerheader .logo p span{color: #fff;}
@@ -60,7 +60,7 @@ section.direction{padding: 0; width: 100%; position: relative;}
 .item-slide-title {  font-size: 32px;  color: #ccc;  text-transform: uppercase;  }
 .item-slide-info-1 {  font-size: 22px; color: #ccc;  text-transform: uppercase;}
 .item-slide-info-2 {  font-size: 20px;  font-size: 4rem; color: #2ebaaf;  text-transform: uppercase;}
-.items-slider-container .slider-nav,.js-items-slider-container2 .slider-nav2,.js-items-slider-container3 .slider-nav3,.js-items-slider-container4 .slider-nav4 {  background-color: #ddd;  margin-bottom: 30px; }
+.items-slider-container .slider-nav,.js-items-slider-container2 .slider-nav2,.js-items-slider-container3 .slider-nav3,.js-items-slider-container4 .slider-nav4 { background-color: #ddd;  margin-bottom: 30px; }
 .items-slider-container .slider-nav .slick-slide,.js-items-slider-container2 .slider-nav2 .slick-slide,.js-items-slider-container3 .slider-nav3 .slick-slide,.js-items-slider-container4 .slider-nav4 .slick-slide {  position: relative;  padding: 7px; }
 .items-slider-container .slider{font-size: 16px;}
 /*.items-slider-container .slider iframe{}*/

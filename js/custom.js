@@ -154,6 +154,7 @@ $(document).ready(function () {
         centerMode: false,
         focusOnSelect: true,
         arrows: false,
+        vertical: true,
         accessibility: true,
         onAfterChange: function (slide, index) {
 //            console.log("slider-nav change");
@@ -181,6 +182,7 @@ $(document).ready(function () {
         centerMode: false,
         focusOnSelect: true,
         arrows: false,
+        vertical: true,
         accessibility: true,
         onAfterChange: function (slide, index) {
 //            console.log("slider-nav2 change");
@@ -208,6 +210,7 @@ $(document).ready(function () {
         centerMode: false,
         focusOnSelect: true,
         arrows: false,
+        vertical: true,
         accessibility: true,
         onAfterChange: function (slide, index) {
 //            console.log("slider-nav3 change");
@@ -234,6 +237,7 @@ $(document).ready(function () {
         centerMode: false,
         focusOnSelect: true,
         arrows: false,
+        vertical: true,
         accessibility: true,
         onAfterChange: function (slide, index) {
 //            console.log("slider-nav4 change");
@@ -260,6 +264,7 @@ $(document).ready(function () {
         centerMode: false,
         focusOnSelect: true,
         arrows: false,
+        vertical: true,
         accessibility: true,
         onAfterChange: function (slide, index) {
 //            console.log("slider-nav4 change");
@@ -271,30 +276,29 @@ $(document).ready(function () {
             $(slick.$slides.get(0)).addClass('current-slide');
         }
     });
-    $('.box .js-items-slider-container6 .slider-for6').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.js-items-slider-container6 .slider-nav6'
-    });
-    $('.box .js-items-slider-container6 .slider-nav6').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.js-items-slider-container6 .slider-for6',
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true,
-        arrows: false,
-        accessibility: true,
-        onAfterChange: function (slide, index) {
-//            console.log("slider-nav4 change");
-//            console.log(this.$slides.get(index));
-            $('.current-slide').removeClass('current-slide');
-            $(this.$slides.get(index)).addClass('current-slide');
-        },
-        onInit: function (slick) {
-            $(slick.$slides.get(0)).addClass('current-slide');
-        }
-    });
+//    $('.box .js-items-slider-container6 .slider-for6').slick({
+//        slidesToShow: 1,
+//        slidesToScroll: 1,
+//        arrows: false,
+//        fade: true,
+//        asNavFor: '.js-items-slider-container6 .slider-nav6'
+//    });
+//    $('.box .js-items-slider-container6 .slider-nav6').slick({
+//        slidesToShow: 4,
+//        slidesToScroll: 1,
+//        asNavFor: '.js-items-slider-container6 .slider-for6',
+//        dots: false,
+//        centerMode: false,
+//        focusOnSelect: true,
+//        arrows: false,
+//        vertical: true,
+//        accessibility: true,
+//        onAfterChange: function (slide, index) {
+//            $('.current-slide').removeClass('current-slide');
+//            $(this.$slides.get(index)).addClass('current-slide');
+//        },
+//        onInit: function (slick) {
+//            $(slick.$slides.get(0)).addClass('current-slide');
+//        }
+//    });
 });
