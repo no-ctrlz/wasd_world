@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*pc화면 해상도 1400*/
+@media screen and (max-width: 1400px){
+    header .innerHeader{width: 95%; min-width: 90%;}
+    .leftbox{padding:0 120px; transform: translateY(-10%);}
+    .gnb .contact{transform: translateY(-10%);}
+}
+
+/*태블릿 모드 1024*/
+@media screen and (max-width:1024px){
+    header .innerHeader{width: 95%; min-width: 90%;}
+    header .innerHeader .gnb, header .innerHeader .tnb{display: none;}
+    .innerHeader .gnbMo {display: block; color:#fff; font-size: 40px; float: right;}
+    section.main .mainTitle{width: 65%;}
+    br.mo{display: none;}
+    section.about ul li p.img{height: 269px;}
+    section.sns ul li a p.img{height: 200px;}
+    section.me{margin-bottom: 50px;}
+    section.me ul.in li p:before{left: -20px;}
+    section.sns ul li{width: 32.2%; margin-right: 1.7%;}
+    footer .inner ul.list{display: none;}
+}
+
+/*768*/
+@media screen and (max-width:768px){
+    }
+
+/*414*/
+@media screen and (max-width:414px){
+}
+@media screen and (max-width:375px){
+  
+}
+/*모바일 320*/
+@media screen and (max-width:320px){
+    br.mo{display: block;}
+    .wrap{min-width: 320px;}
+    header .innerHeader{min-width: 320px;}
+    header .innerHeader .logo{width: 140px; height: auto; margin-left: 10px;}
+}
+
